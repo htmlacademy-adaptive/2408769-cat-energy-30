@@ -18,118 +18,122 @@
         <div class="container">
           <ul class="main-nav__list">
             <li class="main-nav__item ">
-              <a class="main-nav__link link link--current">главная</a>
+              <a class="main-nav__link link" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">подбор программы</a>
+              <a class="main-nav__link link link--current">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="main-container">
+    <main class="main-container main-form">
       <section class="form">
-        <header class="form-header">
-          <h1 class="form-header__title">Подбор программы</h1>
-          <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        </header>
-        <form class="program-selection" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="owner-information">
-            <legend class="visually-hidden">Информация о владельце</legend>
-            <label class="owner-information__label">
-              <span class="owner-information__title form-inscription">Имя:*</span>
-              <input class="owner-information__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
-            </label>
-            <label class="owner-information__label">
-              <span class="owner-information__title form-inscription">Вес (кг):*</span>
-              <input class="owner-information__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
-            </label>
-            <label class="owner-information__label">
-              <span class="owner-information__title form-inscription">Возраст (лет):</span>
-              <input class="owner-information__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
-            </label>
-          </fieldset>
-          <fieldset class="tariff-selection">
-            <legend class="visually-hidden">Выбор тарифа</legend>
-            <ul class="tariff-selection__list">
-              <li class="tariff-selection__item">
-                <label class="tariff-selection__label control">
-                  <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="slim" checked>
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">Похудение</span>
-                </label>
-              </li>
-              <li class="tariff-selection__item">
-                <label class="tariff-selection__label control">
-                  <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="pro">
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">Набор массы</span>
-                </label>
-              </li>
-              <li class="tariff-selection__item">
-                <label class="tariff-selection__label control">
-                  <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="idn">
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="contact-details">
-            <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
-            <label class="contact-details__label">
-              <span class="contact-details__title form-inscription">E-mail:*</span>
-              <input class="contact-details__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
-            </label>
-            <label class="contact-details__label">
-              <span class="contact-details__title form-inscription">Телефон:*</span>
-              <input class="contact-details__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
-            </label>
-          </fieldset>
-          <fieldset class="comments">
-            <legend class="comments__title">Контактные данные (владельца кота)</legend>
-            <label class="comments__label">
-              <span class="visually-hidden">Ваш комментарий:</span>
-              <input class="comments__input input" placeholder="Расскажите обо всех повадках кота" type="text" name="comment" required>
-            </label>
-          </fieldset>
-          <fieldset class="additionally">
-            <legend class="additionally__title">Контактные данные (владельца кота)</legend>
-            <ul class="additionally__list">
-              <li class="additionally__item">
-                <label class="additionally__label control">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" name="sweetener">
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label control">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" name="milk">
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">молоко</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label control">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" name="water">
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">питьевая вода</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label control">
-                  <input class="visually-hidden input input--checkbox" type="checkbox" name="vitamins">
-                  <span class="control__mark"></span>
-                  <span class="form-inscription control__discripsions">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+        <div class="container">
+          <header class="form-header">
+            <h1 class="form-header__title title title--lg">Подбор программы</h1>
+            <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </header>
+          <form class="program-selection" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="owner-information">
+              <legend class="visually-hidden">Информация о владельце</legend>
+              <label class="owner-information__label">
+                <span class="owner-information__title form-inscription">Имя:*</span>
+                <input class="owner-information__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
+              </label>
+              <label class="owner-information__label">
+                <span class="owner-information__title form-inscription">Вес (кг):*</span>
+                <input class="owner-information__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
+              </label>
+              <label class="owner-information__label">
+                <span class="owner-information__title form-inscription">Возраст (лет):</span>
+                <input class="owner-information__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
+              </label>
+            </fieldset>
+            <fieldset class="tariff-selection">
+              <legend class="visually-hidden">Выбор тарифа</legend>
+              <ul class="tariff-selection__list">
+                <li class="tariff-selection__item">
+                  <label class="tariff-selection__label control">
+                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="slim" checked>
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">Похудение</span>
+                  </label>
+                </li>
+                <li class="tariff-selection__item">
+                  <label class="tariff-selection__label control">
+                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="pro">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">Набор массы</span>
+                  </label>
+                </li>
+                <li class="tariff-selection__item">
+                  <label class="tariff-selection__label control">
+                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="idn">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="contact-details">
+              <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
+              <label class="contact-details__label">
+                <span class="contact-details__title form-inscription">E-mail:*</span>
+                <input class="contact-details__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
+              </label>
+              <label class="contact-details__label">
+                <span class="contact-details__title form-inscription">Телефон:*</span>
+                <input class="contact-details__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
+              </label>
+            </fieldset>
+            <fieldset class="comments">
+              <legend class="comments__title">Контактные данные (владельца кота)</legend>
+              <label class="comments__label">
+                <span class="visually-hidden">Ваш комментарий:</span>
+                <input class="comments__input input" placeholder="Расскажите обо всех повадках кота" type="text" name="comment" required>
+              </label>
+            </fieldset>
+            <fieldset class="additionally">
+              <legend class="additionally__title">Контактные данные (владельца кота)</legend>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="sweetener">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="milk">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">молоко</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="water">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="vitamins">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="program-selection__button button button--primary" type="submit">Отправить заявку</button>
+            <p class="program-selection__footnote">* — Обязательные поля</p>
+          </form>
+        </div>
       </section>
       <section class="contacts">
         <div class="contacts__container container">

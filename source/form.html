@@ -10,8 +10,8 @@
   <body>
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип">
-        <img src="images/icons/logo-title.svg" width="101" height="18" alt="CAT ENERGY">
+        <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY">
+        <img src="images/icons/logo-title.svg" width="101" height="18" alt="">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -40,18 +40,24 @@
           <form class="program-selection" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="owner-information">
               <legend class="visually-hidden">Информация о владельце</legend>
-              <label class="owner-information__label">
-                <span class="owner-information__title form-inscription">Имя:*</span>
-                <input class="owner-information__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
-              </label>
-              <label class="owner-information__label">
-                <span class="owner-information__title form-inscription">Вес (кг):*</span>
-                <input class="owner-information__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
-              </label>
-              <label class="owner-information__label">
-                <span class="owner-information__title form-inscription">Возраст (лет):</span>
-                <input class="owner-information__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
-              </label>
+              <div class="owner-information__wrapper field-name">
+                <label class="field-name__label">
+                  <span class="field-name__title form-inscription">Имя:*</span>
+                  <input class="field-name__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
+                </label>
+              </div>
+              <div class="owner-information__wrapper field-weight">
+                <label class="field-weight__label">
+                  <span class="field-weight__title form-inscription">Вес (кг):*</span>
+                  <input class="field-weight__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
+                </label>
+              </div>
+              <div class="owner-information__wrapper field-age">
+                <label class="field-age__label">
+                  <span class="field-age__title form-inscription">Возраст (лет):</span>
+                  <input class="field-age__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
+                </label>
+              </div>
             </fieldset>
             <fieldset class="tariff-selection">
               <legend class="visually-hidden">Выбор тарифа</legend>
@@ -81,21 +87,27 @@
             </fieldset>
             <fieldset class="contact-details">
               <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
-              <label class="contact-details__label">
-                <span class="contact-details__title form-inscription">E-mail:*</span>
-                <input class="contact-details__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
-              </label>
-              <label class="contact-details__label">
-                <span class="contact-details__title form-inscription">Телефон:*</span>
-                <input class="contact-details__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
-              </label>
+              <div class="contact-details__wrapper field-email">
+                <label class="field-email__label">
+                  <span class="field-email__title form-inscription">E-mail:*</span>
+                  <input class="field-email__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
+                </label>
+              </div>
+              <div class="contact-details__wrapper field-tel">
+                <label class="field-tel__label">
+                  <span class="field-tel__title form-inscription">Телефон:*</span>
+                  <input class="field-tel__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
+                </label>
+              </div>
             </fieldset>
             <fieldset class="comments">
               <legend class="comments__title">Контактные данные (владельца кота)</legend>
-              <label class="comments__label">
-                <span class="visually-hidden">Ваш комментарий:</span>
-                <input class="comments__input input" placeholder="Расскажите обо всех повадках кота" type="text" name="comment" required>
-              </label>
+              <div class="comments__wrapper field-comment">
+                <label class="field-comment__label">
+                  <span class="visually-hidden">Ваш комментарий:</span>
+                  <textarea class="field-comment__input input" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+                </label>
+              </div>
             </fieldset>
             <fieldset class="additionally">
               <legend class="additionally__title">Контактные данные (владельца кота)</legend>
@@ -139,7 +151,7 @@
         <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           <img src="images/contacts/location.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
         </div>
       </section>

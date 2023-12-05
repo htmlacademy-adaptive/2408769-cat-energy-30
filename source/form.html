@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY">
@@ -18,85 +18,131 @@
         <div class="container">
           <ul class="main-nav__list">
             <li class="main-nav__item ">
-              <a class="main-nav__link link link--current" href="#">главная</a>
+              <a class="main-nav__link link" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">подбор программы</a>
+              <a class="main-nav__link link link--current" href="#">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="main-container main-index">
-      <h1 class="visually-hidden">CAT ENERGY</h1>
-      <section class="promo">
+    <main class="main-container main-form">
+      <section class="form">
         <div class="container">
-          <h2 class="promo__title title title--md">Функциональное<span class="custom-br"></span>питание для котов</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img src="images/index/promo.png" width="280" height="270" alt="Пример продукта Cat Energy.">
-          <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
-        </div>
-      </section>
-      <section class="catalog-types">
-        <div class="container">
-          <h2 class="visually-hidden">Виды каталогов</h2>
-          <ul class="catalog-types__list">
-            <li class="catalog-types__item">
-              <article class="catalog-types__card assortment-card assortment-card--slim">
-                <h3 class="assortment-card__title title title--sm">похудение</h3>
-                <p class="assortment-card__descripsion">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="assortment-card__link link link--arrow" href="#">каталог slim</a>
-              </article>
-            </li>
-            <li class="catalog-types__item">
-              <article class="catalog-types__card assortment-card assortment-card--pro">
-                <h3 class="assortment-card__title title title--sm">набор массы</h3>
-                <p class="assortment-card__descripsion">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="assortment-card__link link link--arrow" href="#">каталог pro</a>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="mechanics-work">
-        <div class="container">
-          <h2 class="mechanics-work__title title title--md">Как это работает</h2>
-          <ol class="mechanics-work__list">
-            <li class="mechanics-work__item">
-              <p class="mechanics-work__description">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="mechanics-work__item">
-              <p class="mechanics-work__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="mechanics-work__item">
-              <p class="mechanics-work__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="mechanics-work__item">
-              <p class="mechanics-work__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ol>
-        </div>
-      </section>
-      <section class="interactive-example">
-        <div class="container">
-          <h2 class="interactive-example__title title  title--md">Живой пример</h2>
-          <p class="interactive-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="interactive-example__stats stats-list">
-            <div class="stats-list__item">
-              <dt class="stats-list__number">5 кг</dt>
-              <dd class="stats-list__description">снижение<span class="custom-br"></span>веса</dd>
-            </div>
-            <div class="stats-list__item">
-              <dt class="stats-list__number">60 дней</dt>
-              <dd class="stats-list__description">затрачено<span class="custom-br"></span>времени</dd>
-            </div>
-          </dl>
-          <p class="interactive-example__result">Затраты на питание: 15 000 РУБ.</p>
-          <img src="images/index/fat-cat.png" width="280" height="256" alt="Пример толстого кота.">
-          <img src="images/index/thin-cat.png" width="280" height="256" alt="Пример худого кота.">
+          <header class="form-header">
+            <h1 class="form-header__title title title--lg">Подбор программы</h1>
+            <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </header>
+          <form class="program-selection" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="owner-information">
+              <legend class="visually-hidden">Информация о владельце</legend>
+              <div class="owner-information__wrapper field-name">
+                <label class="field-name__label">
+                  <span class="field-name__title form-inscription">Имя:*</span>
+                  <input class="field-name__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
+                </label>
+              </div>
+              <div class="owner-information__wrapper field-weight">
+                <label class="field-weight__label">
+                  <span class="field-weight__title form-inscription">Вес (кг):*</span>
+                  <input class="field-weight__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
+                </label>
+              </div>
+              <div class="owner-information__wrapper field-age">
+                <label class="field-age__label">
+                  <span class="field-age__title form-inscription">Возраст (лет):</span>
+                  <input class="field-age__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="tariff-selection">
+              <legend class="visually-hidden">Выбор тарифа</legend>
+              <ul class="tariff-selection__list">
+                <li class="tariff-selection__item">
+                  <label class="tariff-selection__label control">
+                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="slim" checked>
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">Похудение</span>
+                  </label>
+                </li>
+                <li class="tariff-selection__item">
+                  <label class="tariff-selection__label control">
+                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="pro">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">Набор массы</span>
+                  </label>
+                </li>
+                <li class="tariff-selection__item">
+                  <label class="tariff-selection__label control">
+                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="idn">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="contact-details">
+              <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
+              <div class="contact-details__wrapper field-email">
+                <label class="field-email__label">
+                  <span class="field-email__title form-inscription">E-mail:*</span>
+                  <input class="field-email__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
+                </label>
+              </div>
+              <div class="contact-details__wrapper field-tel">
+                <label class="field-tel__label">
+                  <span class="field-tel__title form-inscription">Телефон:*</span>
+                  <input class="field-tel__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="comments">
+              <legend class="comments__title">Контактные данные (владельца кота)</legend>
+              <div class="comments__wrapper field-comment">
+                  <span class="visually-hidden">Ваш комментарий:</span>
+                  <textarea class="field-comment__input input" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="additionally">
+              <legend class="additionally__title">Контактные данные (владельца кота)</legend>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="sweetener">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="milk">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">молоко</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="water">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label control">
+                    <input class="visually-hidden input input--checkbox" type="checkbox" name="vitamins">
+                    <span class="control__mark"></span>
+                    <span class="form-inscription control__discripsions">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="program-selection__button button button--primary" type="submit">Отправить заявку</button>
+            <p class="program-selection__footnote">* — Обязательные поля</p>
+          </form>
         </div>
       </section>
       <section class="contacts">

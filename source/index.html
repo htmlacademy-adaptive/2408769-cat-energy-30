@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -36,7 +40,11 @@
         <div class="container">
           <h2 class="promo__title title title--md">Функциональное<span class="custom-br"></span>питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img src="images/index/promo.png" width="280" height="270" alt="Пример продукта Cat Energy.">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="449">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
+            <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
+          </picture>
           <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -98,8 +106,15 @@
             <span>Затраты на питание:</span>
             <span>15 000 РУБ.</span>
           </p>
-          <img src="images/index/fat-cat.png" width="280" height="256" alt="Пример толстого кота.">
-          <img src="images/index/thin-cat.png" width="280" height="256" alt="Пример худого кота.">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@2x.png 2x"  width="560" height="512">
+            <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример толстого кота.">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/thin-cat--tablet@1x.png 1x, images/thin-cat--tablet@2x.png 2x"  width="560" height="512">
+            <img src="images/thin-cat--mobile@1x.png" srcset="images/thin-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример худого кота.">
+          </picture>
+
         </div>
       </section>
       <section class="contacts">
@@ -107,7 +122,11 @@
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <img src="images/contacts/location.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          <picture>
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="images/location--desktop@1x.jpg 1x, images/location--tablet@2x.jpg 2x"  width="1440" height="400">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="images/location--tablet@1x.jpg 1x, images/location--tablet@2x.jpg 2x"  width="768" height="400">
+            <img src="images/location--mobile@1x.jpg" srcset="images/location--mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          </picture>
         </div>
       </section>
     </main>

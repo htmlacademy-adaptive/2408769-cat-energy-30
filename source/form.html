@@ -28,116 +28,116 @@
               <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link link link--current" href="#">подбор программы</a>
+              <span class="main-nav__link link link--current" href="#">подбор программы</span>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main-container main-form">
-      <section class="form">
+      <section class="program-selection">
         <div class="container">
-          <header class="form-header">
-            <h1 class="form-header__title title title--lg">Подбор программы</h1>
-            <p class="form-header__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <header class="program-selection__header">
+            <h1 class="program-selection__title title title--lg">Подбор программы</h1>
+            <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </header>
-          <form class="program-selection" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="owner-information">
+          <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form__fieldset">
               <legend class="visually-hidden">Информация о владельце</legend>
-              <div class="owner-information__wrapper field-name">
-                <label class="field-name__label">
-                  <span class="field-name__title form-inscription">Имя:*</span>
-                  <input class="field-name__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
+              <div class="form__column form__column--name">
+                <label class="form__label">
+                  <span class="form__title form-inscription">Имя:*</span>
+                  <input class="form__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
                 </label>
               </div>
-              <div class="owner-information__wrapper field-weight">
-                <label class="field-weight__label">
-                  <span class="field-weight__title form-inscription">Вес (кг):*</span>
-                  <input class="field-weight__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
+              <div class="form__column form__column--weight">
+                <label class="form__label">
+                  <span class="form__title form-inscription">Вес (кг):*</span>
+                  <input class="form__input input" placeholder="Укажите вес вашего питомца" type="number" name="weight" value="7" required>
                 </label>
               </div>
-              <div class="owner-information__wrapper field-age">
-                <label class="field-age__label">
-                  <span class="field-age__title form-inscription">Возраст (лет):</span>
-                  <input class="field-age__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
+              <div class="form__column form__column--age">
+                <label class="form__label">
+                  <span class="form__title form-inscription">Возраст (лет):</span>
+                  <input class="form__input input" placeholder="Укажите возраст вашего питомца" type="number" name="age" value="7">
                 </label>
               </div>
             </fieldset>
-            <fieldset class="tariff-selection">
+            <fieldset class="form__fieldset">
               <legend class="visually-hidden">Выбор тарифа</legend>
-              <ul class="tariff-selection__list">
-                <li class="tariff-selection__item">
-                  <label class="tariff-selection__label control">
-                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="slim" checked>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label control control--radio">
+                    <input class="visually-hidden input" type="radio" name="tariff-type" value="slim" checked>
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">Похудение</span>
                   </label>
                 </li>
-                <li class="tariff-selection__item">
-                  <label class="tariff-selection__label control">
-                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="pro">
+                <li class="form__item">
+                  <label class="form__label control control--radio">
+                    <input class="visually-hidden input" type="radio" name="tariff-type" value="pro">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">Набор массы</span>
                   </label>
                 </li>
-                <li class="tariff-selection__item">
-                  <label class="tariff-selection__label control">
-                    <input class="visually-hidden input input--radio" type="radio" name="tariff-type" value="idn">
+                <li class="form__item">
+                  <label class="form__label control control--radio">
+                    <input class="visually-hidden input" type="radio" name="tariff-type" value="idn">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="contact-details">
-              <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
-              <div class="contact-details__wrapper field-email">
-                <label class="field-email__label">
-                  <span class="field-email__title form-inscription">E-mail:*</span>
-                  <input class="field-email__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <div class="form__column form__column--email">
+                <label class="form__label">
+                  <span class="form__title form-inscription">E-mail:*</span>
+                  <input class="form__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
                 </label>
               </div>
-              <div class="contact-details__wrapper field-tel">
-                <label class="field-tel__label">
-                  <span class="field-tel__title form-inscription">Телефон:*</span>
-                  <input class="field-tel__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
+              <div class="form__column form__column--tel">
+                <label class="form__label">
+                  <span class="form__title form-inscription">Телефон:*</span>
+                  <input class="form__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
                 </label>
               </div>
             </fieldset>
-            <fieldset class="comments">
-              <legend class="comments__title">Контактные данные (владельца кота)</legend>
-              <div class="comments__wrapper field-comment">
-                  <span class="visually-hidden">Ваш комментарий:</span>
-                  <textarea class="field-comment__input input" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <div class="form__column form__column--comment">
+                <span class="visually-hidden">Ваш комментарий:</span>
+                <textarea class="form__input input" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
               </div>
             </fieldset>
-            <fieldset class="additionally">
-              <legend class="additionally__title">Контактные данные (владельца кота)</legend>
-              <ul class="additionally__list">
-                <li class="additionally__item">
-                  <label class="additionally__label control">
-                    <input class="visually-hidden input input--checkbox" type="checkbox" name="sweetener">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label control control--checkbox">
+                    <input class="visually-hidden input" type="checkbox" name="sweetener">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">сахарозаменитель</span>
                   </label>
                 </li>
-                <li class="additionally__item">
-                  <label class="additionally__label control">
-                    <input class="visually-hidden input input--checkbox" type="checkbox" name="milk">
+                <li class="form__item">
+                  <label class="form__label control control--checkbox">
+                    <input class="visually-hidden input" type="checkbox" name="milk">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">молоко</span>
                   </label>
                 </li>
-                <li class="additionally__item">
-                  <label class="additionally__label control">
-                    <input class="visually-hidden input input--checkbox" type="checkbox" name="water">
+                <li class="form__item">
+                  <label class="form__label control control--checkbox">
+                    <input class="visually-hidden input" type="checkbox" name="water">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">питьевая вода</span>
                   </label>
                 </li>
-                <li class="additionally__item">
-                  <label class="additionally__label control">
-                    <input class="visually-hidden input input--checkbox" type="checkbox" name="vitamins">
+                <li class="form__item">
+                  <label class="form__label control control--checkbox">
+                    <input class="visually-hidden input" type="checkbox" name="vitamins">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">витамины</span>
                   </label>
@@ -150,7 +150,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container container">
+        <div class="contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>

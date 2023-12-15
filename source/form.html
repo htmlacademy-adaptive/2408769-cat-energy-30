@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Cat Energy</title>
@@ -13,14 +13,22 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY">
-        <img src="images/logo-title.svg" width="101" height="18" alt="">
+      <a class="main-header__logo link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
+          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
+          <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
+          <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
+        </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="container">
-          <ul class="main-nav__list">
+          <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list list">
             <li class="main-nav__item ">
               <a class="main-nav__link link" href="index.html">главная</a>
             </li>
@@ -65,7 +73,7 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Выбор тарифа</legend>
-              <ul class="form__list">
+              <ul class="form__list list">
                 <li class="form__item">
                   <label class="form__label control control--radio">
                     <input class="visually-hidden input" type="radio" name="tariff-type" value="slim" checked>
@@ -90,7 +98,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <legend class="form__legend title title--md">Контактные данные (владельца кота)</legend>
               <div class="form__column form__column--email">
                 <label class="form__label">
                   <span class="form__title form-inscription">E-mail:*</span>
@@ -105,39 +113,39 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <legend class="form__legend title title--md">Комментарий</legend>
               <div class="form__column form__column--comment">
                 <span class="visually-hidden">Ваш комментарий:</span>
                 <textarea class="form__input input" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
-              <ul class="form__list">
+              <legend class="form__legend title title--md">Дополнительно</legend>
+              <ul class="form__list list">
                 <li class="form__item">
                   <label class="form__label control control--checkbox">
-                    <input class="visually-hidden input" type="checkbox" name="sweetener">
+                    <input class="visually-hidden" type="checkbox" name="sweetener">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label control control--checkbox">
-                    <input class="visually-hidden input" type="checkbox" name="milk">
+                    <input class="visually-hidden" type="checkbox" name="milk">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">молоко</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label control control--checkbox">
-                    <input class="visually-hidden input" type="checkbox" name="water">
+                    <input class="visually-hidden" type="checkbox" name="water">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label control control--checkbox">
-                    <input class="visually-hidden input" type="checkbox" name="vitamins">
+                    <input class="visually-hidden" type="checkbox" name="vitamins">
                     <span class="control__mark"></span>
                     <span class="form-inscription control__discripsions">витамины</span>
                   </label>
@@ -165,10 +173,10 @@
     <footer class="main-footer">
       <div class="container">
         <div class="main-footer__logo">
-          <img src="images/logo-title.svg" width="128" height="24" alt="CAT ENERGY">
+          <img src="images/text-logo--mobile.svg" width="128" height="24" alt="CAT ENERGY">
         </div>
         <div class="main-footer__social-media social-media">
-          <ul class="social-media__list">
+          <ul class="social-media__list list">
             <li class="social-media__item">
               <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">

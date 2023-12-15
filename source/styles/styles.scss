@@ -1,7 +1,35 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/custom-br.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/button.scss";
+@import "./blocks/link.scss";
+@import "./blocks/title.scss";
+@import "./blocks/list.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/catalog-types.scss";
+@import "./blocks/assortment-card.scss";
+@import "./blocks/mechanics-work.scss";
+@import "./blocks/interactive-example.scss";
+@import "./blocks/stats-list.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/form.scss";
+@import "./blocks/input.scss";
+@import "./blocks/form-inscription.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/descripsion-card.scss";
+@import "./blocks/product-more.scss";
+@import "./blocks/additionally-product.scss";
+@import "./blocks/additionally-product-card.scss";
+@import "./blocks/banner.scss";

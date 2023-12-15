@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Cat Energy</title>
@@ -11,16 +11,24 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY">
-        <img src="images/logo-title.svg" width="101" height="18" alt="">
+      <a class="main-header__logo link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
+          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
+          <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
+          <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
+        </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="container">
-          <ul class="main-nav__list">
+          <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list list">
             <li class="main-nav__item ">
               <span class="main-nav__link link link--current">главная</span>
             </li>
@@ -38,7 +46,7 @@
       <h1 class="visually-hidden">CAT ENERGY</h1>
       <section class="promo">
         <div class="container">
-          <h2 class="promo__title title title--md">Функциональное<span class="custom-br"></span>питание для котов</h2>
+          <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
             <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="449">
@@ -51,17 +59,17 @@
       <section class="catalog-types">
         <div class="container">
           <h2 class="visually-hidden">Виды каталогов</h2>
-          <ul class="catalog-types__list">
+          <ul class="catalog-types__list list">
             <li class="catalog-types__item">
               <article class="catalog-types__card assortment-card assortment-card--slim">
-                <h3 class="assortment-card__title title title--sm">похудение</h3>
+                <h3 class="assortment-card__title title title--md">похудение</h3>
                 <p class="assortment-card__descripsion">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="assortment-card__link link link--arrow" href="#">каталог slim</a>
               </article>
             </li>
             <li class="catalog-types__item">
               <article class="catalog-types__card assortment-card assortment-card--pro">
-                <h3 class="assortment-card__title title title--sm">набор массы</h3>
+                <h3 class="assortment-card__title title title--md">набор массы</h3>
                 <p class="assortment-card__descripsion">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a class="assortment-card__link link link--arrow" href="#">каталог pro</a>
               </article>
@@ -71,8 +79,8 @@
       </section>
       <section class="mechanics-work">
         <div class="container">
-          <h2 class="mechanics-work__title title title--md">Как это работает</h2>
-          <ol class="mechanics-work__list">
+          <h2 class="mechanics-work__title title title--lg">Как это работает</h2>
+          <ol class="mechanics-work__list list">
             <li class="mechanics-work__item">
               <p class="mechanics-work__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
@@ -90,7 +98,7 @@
       </section>
       <section class="interactive-example">
         <div class="container">
-          <h2 class="interactive-example__title title  title--md">Живой пример</h2>
+          <h2 class="interactive-example__title title  title--lg">Живой пример</h2>
           <p class="interactive-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="interactive-example__stats stats-list">
             <div class="stats-list__item">
@@ -114,7 +122,6 @@
             <source type="image/png" media="(min-width: 768px)" srcset="images/thin-cat--tablet@1x.png 1x, images/thin-cat--tablet@2x.png 2x"  width="560" height="512">
             <img src="images/thin-cat--mobile@1x.png" srcset="images/thin-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример худого кота.">
           </picture>
-
         </div>
       </section>
       <section class="contacts">
@@ -133,10 +140,10 @@
     <footer class="main-footer">
       <div class="container">
         <div class="main-footer__logo">
-          <img src="images/logo-title.svg" width="128" height="24" alt="CAT ENERGY">
+          <img src="images/text-logo--mobile.svg" width="128" height="24" alt="CAT ENERGY">
         </div>
         <div class="main-footer__social-media social-media">
-          <ul class="social-media__list">
+          <ul class="social-media__list list">
             <li class="social-media__item">
               <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" fill="none">

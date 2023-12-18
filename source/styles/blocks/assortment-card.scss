@@ -3,28 +3,16 @@
   line-height: 37px;
 
   &--slim::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../../images/icons/stack.svg#cat-slim");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 36px;
-    height: 50px;
+    @include icon-before(url("../../images/icons/stack.svg#cat-slim"), $transparent, 36px, 50px);
   }
 
   &--pro::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../../images/icons/stack.svg#cat-pro");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 67px;
-    height: 28px;
+    @include icon-before(url("../../images/icons/stack.svg#cat-pro"), $transparent, 67px, 28px);
   }
 }
 
 .assortment-card__descripsion {
-  color: #444444;
+  color: $text-color;
 }
 
 .assortment-card__link {

@@ -4,13 +4,13 @@
 
 .contacts__slogan {
   font-family: $secondary-font;
-  color: #111111;
+  color: $dark-gray;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .contacts__adress {
-  color: #444444;
+  color: $text-color;
   text-decoration: none;
   font-style: normal;
 }

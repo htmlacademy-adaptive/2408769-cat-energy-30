@@ -7,3 +7,14 @@
     src: $font-src;
   }
 }
+
+@mixin icon-before($bg-image-scr, $icon-color, $icon-width, $icon-height) {
+  content: "";
+  display: inline-block;
+  background-image: $bg-image-scr;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $icon-color;
+  width: $icon-width;
+  height: $icon-height;
+}

@@ -12,11 +12,11 @@
 
   &--primary {
     background-color: $primary-color;
-    color: #ffffff;
+    color: $basic-white;
   }
 
   &--secondary {
     background-color: $secondary-color;
-    color: #444444;
+    color: $text-color;
   }
 }

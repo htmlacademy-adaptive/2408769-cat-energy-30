@@ -2,8 +2,17 @@
   background: $primary-color;
 }
 
+.banner__icon {
+  display: block;
+  background-image: url("../../images/icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 78px;
+  height: 80px;
+}
+
 .banner__descripsion {
-  color: #ffffff;
+  color: $basic-white;
   font-size: 16px;
   line-height: 20px;
 }

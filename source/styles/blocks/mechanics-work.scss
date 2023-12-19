@@ -2,6 +2,24 @@
   line-height: 40px;
 }
 
+.mechanics-work__item {
+  &--leaf::before {
+    @include icon-before(url("../../images/icons/stack.svg#icon-leaf"), $primary-color, 30px, 32px);
+  }
+
+  &--water::before {
+    @include icon-before(url("../../images/icons/stack.svg#icon-water"), $primary-color, 27px, 29px);
+  }
+
+  &--eat::before {
+    @include icon-before(url("../../images/icons/stack.svg#icon-eat"), $primary-color, 26px, 30px);
+  }
+
+  &--alarm::before {
+    @include icon-before(url("../../images/icons/stack.svg#icon-alarm"), $primary-color, 27px, 31px);
+  }
+}
+
 .mechanics-work__description {
-  color: #444444;
+  color: $text-color;
 }

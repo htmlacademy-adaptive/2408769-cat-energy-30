@@ -1,10 +1,18 @@
 .assortment-card__title {
   text-transform: uppercase;
   line-height: 37px;
+
+  &--slim::before {
+    @include icon-before(url("../../images/icons/stack.svg#cat-slim"), $transparent, 36px, 50px);
+  }
+
+  &--pro::before {
+    @include icon-before(url("../../images/icons/stack.svg#cat-pro"), $transparent, 67px, 28px);
+  }
 }
 
 .assortment-card__descripsion {
-  color: #444444;
+  color: $text-color;
 }
 
 .assortment-card__link {

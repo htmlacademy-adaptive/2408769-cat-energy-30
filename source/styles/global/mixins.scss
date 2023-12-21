@@ -8,7 +8,7 @@
   }
 }
 
-@mixin icon-before($bg-image-scr, $icon-color, $icon-width, $icon-height) {
+@mixin icon-pseudoelement($bg-image-scr, $icon-color, $icon-width, $icon-height) {
   content: "";
   display: inline-block;
   background-image: $bg-image-scr;

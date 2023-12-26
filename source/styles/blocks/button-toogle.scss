@@ -1,0 +1,15 @@
+.button-toogle {
+  border: 0;
+  height: 24px;
+  width: 24px;
+  background-color: $transparent;
+  background-image: url("../../images/icons/stack.svg#burger");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+
+  &--close {
+    background-image: url("../../images/icons/stack.svg#cross");
+    background-size: 18px 18px;
+  }
+}

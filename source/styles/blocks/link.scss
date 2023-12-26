@@ -8,11 +8,12 @@
     color: $text-color-2;
   }
 
-  &--arrow {
-    @include icon-pseudoelement(url("../../images/icons/stack.svg#icon-arrow"), $transparent, 32px, 10px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-position: -8px;
+  &--arrow::after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../images/icons/stack.svg#icon-arrow");
+    background-size: 32px 10px;
   }
 }

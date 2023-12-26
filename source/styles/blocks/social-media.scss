@@ -1,0 +1,20 @@
+.social-media__list {
+  display: flex;
+  gap: 24px;
+}
+
+.social-media__link {
+  color: $icon-color;
+}
+
+.social-media__icon {
+  &:hover,
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+    opacity: 0.3;
+  }
+}

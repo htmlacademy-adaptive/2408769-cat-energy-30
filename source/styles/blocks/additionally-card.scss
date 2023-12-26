@@ -1,0 +1,28 @@
+.additionally-card {
+  margin-top: 13px;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 19px;
+    background-color: $basic-gray-lighter;
+  }
+}
+
+.additionally-card__title {
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.additionally-card__descripsion {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additionally-card__button {
+  width: 100%;
+  margin-top: 15px;
+}

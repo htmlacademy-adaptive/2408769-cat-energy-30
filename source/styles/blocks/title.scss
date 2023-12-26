@@ -14,4 +14,14 @@
   &--lg {
     font-size: 36px;
   }
+
+  &--line::after {
+    content: " ";
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $basic-gray-lighter;
+    margin-top: 41px;
+    margin-left: -20px;
+    }
 }

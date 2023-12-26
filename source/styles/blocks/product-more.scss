@@ -1,10 +1,36 @@
+.product-more {
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  &::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#plus");
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 23px;
+  }
+}
+
 .product-more__title {
   color: $dark-gray;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .product-more__description {
   font-size: 12px;
   line-height: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.product-more__button {
+  margin-top: 21px;
+  width: 100%;
 }

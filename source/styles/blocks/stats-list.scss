@@ -1,16 +1,25 @@
+.stats-list__item {
+  border: 1px solid #cdcdcd;
+}
+
 .stats-list__number {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 }
 
 .stats-list__description {
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
 }
 
 .interactive-example__result {
   font-family: $secondary-font;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 }

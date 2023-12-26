@@ -1,7 +1,29 @@
+.product-card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .product-card__image {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card__title {
   line-height: 20px;
+  width: 100px;
+  margin-bottom: 14px;
+}
+
+.product-card__button {
+  grid-column: 1/-1;
+  width: 100%;
+  margin-top: 17px;
+}
+
+.product-card__desc-wrapper {
+  display: flex;
+  flex-direction: column;
 }

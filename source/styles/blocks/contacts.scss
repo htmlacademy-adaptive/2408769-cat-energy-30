@@ -1,5 +1,16 @@
 .contacts {
   line-height: 20px;
+
+  &--bg {
+    background-color: $basic-gray;
+  }
+}
+
+.contacts__wrapper {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts__slogan {
@@ -7,10 +18,16 @@
   color: $dark-gray;
   font-size: 16px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .contacts__adress {
   color: $text-color;
   text-decoration: none;
   font-style: normal;
+}
+
+.contacts__map {
+  border: 0;
+  margin-bottom: -4.5px;
 }

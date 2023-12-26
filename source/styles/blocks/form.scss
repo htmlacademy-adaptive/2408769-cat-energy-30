@@ -1,11 +1,70 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &--line::after {
+    content: " ";
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $basic-gray-lighter;
+    margin-left: -20px;
+  }
+}
+
+.form__wrapper {
+  margin-top: 28px;
+  margin-bottom: 24px;
+
+  &--input {
+    display: grid;
+    gap: 14px;
+  }
+}
+
 .form__legend {
   line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
 .form__column {
   color: $text-color;
 }
 
+.form__label {
+  &--input {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(0, max-content) auto;
+    gap: 13px;
+  }
+}
+
+.form__list {
+  &--pick{
+    display: grid;
+    gap: 18px;
+  }
+}
+
 .form__item {
   color: $text-color;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.form__input {
+  padding-left: 25px;
+}
+
+.form__textarea {
+  min-height: 150px;
 }

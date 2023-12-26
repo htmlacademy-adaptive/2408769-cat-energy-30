@@ -1,13 +1,31 @@
 .promo {
   color: $basic-white;
+  min-height: 478px;
+  text-align: center;
+  background: linear-gradient(rgba($primary-color, 0.85) 62.4%, rgba($primary-color, 0.85)),
+              image-set(
+                url("../../images/promo-bg--mobile@1x.jpg") type("image/jpg") 1x,
+                url("../../images/promo-bg--mobile@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 302px;
+  margin-bottom: 20px;
 }
 
 .promo__title {
+  padding-top: 27px;
+  padding-bottom: 25px;
   line-height: 36px;
 }
 
 .promo__slogan {
+  margin: 0;
+  margin-bottom: 29px;
   font-family: $secondary-font;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.promo__button {
+  margin-top: 3px;
 }

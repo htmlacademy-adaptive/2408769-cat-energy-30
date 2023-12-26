@@ -1,25 +1,76 @@
+.mechanics-work {
+  margin-bottom: 40px;
+}
+
 .mechanics-work__title {
   line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.mechanics-work__list {
+  display: grid;
+  gap: 20px;
 }
 
 .mechanics-work__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+
   &--leaf::before {
-    @include icon-pseudoelement(url("../../images/icons/stack.svg#icon-leaf"), $primary-color, 30px, 32px);
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url("../../images/icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
   }
 
   &--water::before {
-    @include icon-pseudoelement(url("../../images/icons/stack.svg#icon-water"), $primary-color, 27px, 29px);
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url("../../images/icons/stack.svg#icon-water");
+    background-size: 30px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
   }
 
   &--eat::before {
-    @include icon-pseudoelement(url("../../images/icons/stack.svg#icon-eat"), $primary-color, 26px, 30px);
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url("../../images/icons/stack.svg#icon-eat");
+    background-size: 30px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
   }
 
   &--alarm::before {
-    @include icon-pseudoelement(url("../../images/icons/stack.svg#icon-alarm"), $primary-color, 27px, 31px);
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url("../../images/icons/stack.svg#icon-alarm");
+    background-size: 30px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
   }
 }
 
 .mechanics-work__description {
   color: $text-color;
+  margin: 0;
 }

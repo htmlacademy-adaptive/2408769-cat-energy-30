@@ -13,34 +13,36 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo link" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
-          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
-          <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
-          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
-          <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <div class="container">
-          <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list list">
-            <li class="main-nav__item ">
-              <span class="main-nav__link link link--current">главная</span>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link link" href="form.html">подбор программы</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo link" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
+              <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
+              <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
+            </picture>
+          </a>
+          <button class="main-header__toogle button-toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <nav class="main-nav">
+            <ul class="main-nav__list list">
+              <li class="main-nav__item ">
+                <span class="main-nav__link link link--current">главная</span>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link link" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
     <main class="main-container main-index">
       <h1 class="visually-hidden">CAT ENERGY</h1>
@@ -61,15 +63,15 @@
           <h2 class="visually-hidden">Виды каталогов</h2>
           <ul class="catalog-types__list list">
             <li class="catalog-types__item">
-              <article class="catalog-types__card assortment-card">
-                <h3 class="assortment-card__title assortment-card__title--slim title title--md">похудение</h3>
+              <article class="catalog-types__card assortment-card assortment-card--slim">
+                <h3 class="assortment-card__title title title--md">похудение</h3>
                 <p class="assortment-card__descripsion">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="assortment-card__link link link--arrow" href="#">каталог slim</a>
               </article>
             </li>
             <li class="catalog-types__item">
-              <article class="catalog-types__card assortment-card">
-                <h3 class="assortment-card__title assortment-card__title--pro title title--md">набор массы</h3>
+              <article class="catalog-types__card assortment-card assortment-card--pro">
+                <h3 class="assortment-card__title title title--md">набор массы</h3>
                 <p class="assortment-card__descripsion">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                 <a class="assortment-card__link link link--arrow" href="#">каталог pro</a>
               </article>
@@ -125,58 +127,58 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <picture>
-            <source type="image/jpg" media="(min-width: 1440px)" srcset="images/location--desktop@1x.jpg 1x, images/location--tablet@2x.jpg 2x"  width="1440" height="400">
-            <source type="image/jpg" media="(min-width: 768px)" srcset="images/location--tablet@1x.jpg 1x, images/location--tablet@2x.jpg 2x"  width="768" height="400">
-            <img src="images/location--mobile@1x.jpg" srcset="images/location--mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
-          </picture>
+        <div class="container">
+          <div class="contacts__wrapper">
+            <h2 class="visually-hidden">Контакты</h2>
+            <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
         </div>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
       </section>
     </main>
     <footer class="main-footer">
       <div class="container">
-        <div class="main-footer__logo">
-          <img src="images/text-logo--mobile.svg" width="128" height="24" alt="CAT ENERGY">
-        </div>
-        <div class="main-footer__social-media social-media">
-          <ul class="social-media__list list">
-            <li class="social-media__item">
-              <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
-                <svg width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Vkontakte</span>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link social-media__link--youtube" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на YouTube">
-                <svg width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#icon-youtube"></use>
-                </svg>
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link social-media__link--telegram" href="https://t.me/htmlacademy" title="Наш Telegram">
-                <svg width="28" height="22" aria-hidden="true" focusable="false">
-                  <use href="images/icons/stack.svg#icon-tg"></use>
-                </svg>
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span>HTML Academy</span>
-            <svg width="27" height="34" aria-hidden="true" focusable="false">
-              <use href="images/icons/stack.svg#icon-html_academy"></use>
-            </svg>
-          </a>
+        <div class="main-footer__wrapper">
+          <div class="main-footer__logo">
+            <img src="images/text-logo--mobile.svg" width="128" height="24" alt="CAT ENERGY">
+          </div>
+          <div class="main-footer__social-media social-media">
+            <ul class="social-media__list list">
+              <li class="social-media__item">
+                <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
+                  <svg class="social-media__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#icon-vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Vkontakte</span>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link social-media__link--youtube" href="https://www.youtube.com/user/htmlacademyru" title="Наш канал на YouTube">
+                  <svg class="social-media__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#icon-youtube"></use>
+                  </svg>
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link social-media__link--telegram" href="https://t.me/htmlacademy" title="Наш Telegram">
+                  <svg class="social-media__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#icon-tg"></use>
+                  </svg>
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__title">HTML Academy</span>
+              <svg class="copyright__icon" width="27" height="34" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#icon-html_academy"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

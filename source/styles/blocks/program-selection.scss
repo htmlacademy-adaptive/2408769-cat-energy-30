@@ -1,15 +1,28 @@
 .program-selection__title {
   line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 37px;
 }
 
 .program-selection__description {
   font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
+  padding-right: 50px;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.program-selection__button {
+  margin-top: 10px;
+  width: 100%;
 }
 
 .program-selection__footnote {
   text-align: center;
   line-height: 16px;
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
 }

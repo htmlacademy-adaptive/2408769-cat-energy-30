@@ -9,10 +9,18 @@
 
   &--md {
     font-size: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+    }
   }
 
   &--lg {
     font-size: 36px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+    }
   }
 
   &--line::after {

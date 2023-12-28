@@ -1,16 +1,38 @@
 .interactive-example {
   background-color: $basic-gray-darker;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $basic-white 58%, $basic-gray-darker 58%);
+  }
 }
 
 .interactive-example__title {
   padding-top: 25px;
   margin-bottom: 40px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 60px;
+  }
 }
 
 .interactive-example__description {
   margin: 0;
   color: $text-color;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+}
+
+.interactive-example__wrapper-stats {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .interactive-example__stats {
@@ -18,4 +40,27 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   justify-content: center;
+  margin: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+}
+
+.interactive-example__result {
+  font-family: $secondary-font;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 11px;
+  }
 }

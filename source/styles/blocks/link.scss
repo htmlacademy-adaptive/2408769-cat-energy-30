@@ -3,6 +3,7 @@
   color: $basic-black;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 
   &--product {
     color: $text-color-2;
@@ -15,5 +16,10 @@
     height: 10px;
     background-image: url("../../images/icons/stack.svg#icon-arrow");
     background-size: 32px 10px;
+    background-repeat: no-repeat;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

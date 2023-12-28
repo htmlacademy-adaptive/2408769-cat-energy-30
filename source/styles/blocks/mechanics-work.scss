@@ -1,15 +1,41 @@
 .mechanics-work {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+
+    &--line::after {
+      content: " ";
+      display: block;
+      width: calc(100% + 40px);
+      height: 1px;
+      background-color: $basic-gray-lighter;
+      margin-left: -20px;
+      margin-top: 47px;
+    }
+  }
 }
 
 .mechanics-work__title {
   line-height: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+    padding-top: 15px;
+    margin-bottom: 32px;
+  }
 }
 
 .mechanics-work__list {
   display: grid;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 135px;
+  }
 }
 
 .mechanics-work__item {
@@ -17,17 +43,50 @@
   grid-template-columns: 60px 1fr;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    width: 245px;
+    gap: unset;
+
+    &::after {
+      font-family: $secondary-font, sans-serif;
+      content: counter(list-item);
+      counter-increment: list-item;
+      position: absolute;
+      left: 0%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $transparent;
+      color: $basic-gray;
+      font-size: 280px;
+      line-height: 280px;
+      padding-left: 118px;
+      z-index: -1;
+    }
+  }
+
   &--leaf::before {
     content: " ";
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $primary-color;
     background-image: url("../../images/icons/stack.svg#icon-leaf");
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      margin-top: 40px;
+      margin-bottom: 31px;
+    }
   }
 
   &--water::before {
@@ -35,12 +94,20 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $primary-color;
     background-image: url("../../images/icons/stack.svg#icon-water");
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      margin-top: 40px;
+      margin-bottom: 31px;
+    }
   }
 
   &--eat::before {
@@ -48,12 +115,20 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $primary-color;
     background-image: url("../../images/icons/stack.svg#icon-eat");
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      margin-top: 40px;
+      margin-bottom: 31px;
+    }
   }
 
   &--alarm::before {
@@ -61,16 +136,30 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $primary-color;
     background-image: url("../../images/icons/stack.svg#icon-alarm");
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      margin-top: 40px;
+      margin-bottom: 31px;
+    }
   }
 }
 
 .mechanics-work__description {
   color: $text-color;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -1,3 +1,7 @@
+.form__wrapper-section {
+  margin-bottom: 24px;
+}
+
 .form__fieldset {
   border: none;
   padding: 0;
@@ -13,27 +17,40 @@
   }
 }
 
-.form__wrapper {
-  margin-top: 28px;
-  margin-bottom: 24px;
+.form__wrapper-label {
+  padding-top: 35px;
+  padding-bottom: 25px;
 
   &--input {
     display: grid;
     gap: 14px;
   }
+
+  &--pick {
+    padding-top: 28px;
+  }
 }
 
 .form__legend {
+  display: inline;
   line-height: 26px;
-  margin-top: 24px;
-  margin-bottom: 7px;
-}
+  position: relative;
 
-.form__column {
-  color: $text-color;
+  &--line::after {
+    content: " ";
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    width: 100vh;
+    height: 2px;
+    background-color: $primary-color;
+    margin-left: 20px;
+  }
 }
 
 .form__label {
+  color: $text-color;
+
   &--input {
     position: relative;
     display: grid;
@@ -63,6 +80,7 @@
 
 .form__input {
   padding-left: 25px;
+  height: 45px;
 }
 
 .form__textarea {

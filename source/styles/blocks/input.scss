@@ -13,6 +13,7 @@
 
   &:focus-visible {
     border: 2px solid $text-color;
+    outline: none;
   }
 
   &--error {

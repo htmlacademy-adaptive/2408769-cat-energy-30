@@ -16,12 +16,12 @@
       <div class="container">
         <div class="main-header__wrapper">
           <a class="main-header__logo link" href="index.html">
-            <picture>
+            <picture class="main-header__img">
               <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
               <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
               <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
             </picture>
-            <picture>
+            <picture class="main-header__img">
               <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
               <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
               <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
@@ -31,7 +31,7 @@
           <nav class="main-nav">
             <ul class="main-nav__list list">
               <li class="main-nav__item ">
-                <span class="main-nav__link link link--current">главная</span>
+                <span class="main-nav__link main-nav__link--current link">главная</span>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link link" href="catalog.html">каталог продукции</a>
@@ -48,14 +48,18 @@
       <h1 class="visually-hidden">CAT ENERGY</h1>
       <section class="promo">
         <div class="container">
-          <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <picture>
-            <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="449">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
-            <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
-          </picture>
-          <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
+          <div class="promo__wrapper-title">
+            <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="promo__wrapper-box">
+            <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
+            <picture class="promo__image">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="449">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
+              <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="catalog-types">
@@ -66,20 +70,20 @@
               <article class="catalog-types__card assortment-card assortment-card--slim">
                 <h3 class="assortment-card__title title title--md">похудение</h3>
                 <p class="assortment-card__descripsion">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="assortment-card__link link link--arrow" href="#">каталог slim</a>
+                <a class="assortment-card__link link link--arrow" href="catalog.html">каталог slim</a>
               </article>
             </li>
             <li class="catalog-types__item">
               <article class="catalog-types__card assortment-card assortment-card--pro">
                 <h3 class="assortment-card__title title title--md">набор массы</h3>
                 <p class="assortment-card__descripsion">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="assortment-card__link link link--arrow" href="#">каталог pro</a>
+                <a class="assortment-card__link link link--arrow" href="catalog.html">каталог pro</a>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section class="mechanics-work">
+      <section class="mechanics-work mechanics-work--line">
         <div class="container">
           <h2 class="mechanics-work__title title title--lg">Как это работает</h2>
           <ol class="mechanics-work__list list">
@@ -100,30 +104,36 @@
       </section>
       <section class="interactive-example">
         <div class="container">
-          <h2 class="interactive-example__title title  title--lg">Живой пример</h2>
-          <p class="interactive-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="interactive-example__stats stats-list">
-            <div class="stats-list__item">
-              <dt class="stats-list__number">5 кг</dt>
-              <dd class="stats-list__description">снижение<span class="custom-br"></span>веса</dd>
+          <div class="interactive-example__wrapper-box">
+            <h2 class="interactive-example__title title  title--lg">Живой пример</h2>
+            <p class="interactive-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="interactive-example__wrapper-stats">
+              <dl class="interactive-example__stats stats-list">
+                  <div class="stats-list__item">
+                    <dt class="stats-list__number">5 кг</dt>
+                    <dd class="stats-list__description">снижение веса</dd>
+                  </div>
+                  <div class="stats-list__item">
+                    <dt class="stats-list__number">60 дней</dt>
+                    <dd class="stats-list__description">затрачено времени</dd>
+                  </div>
+                </dl>
+                <p class="interactive-example__result">
+                  <span>Затраты на питание:</span>
+                  <span>15 000 РУБ.</span>
+                </p>
             </div>
-            <div class="stats-list__item">
-              <dt class="stats-list__number">60 дней</dt>
-              <dd class="stats-list__description">затрачено<span class="custom-br"></span>времени</dd>
+            <div class="interactive-example__wrapper-slider">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@2x.png 2x"  width="560" height="512">
+                <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример толстого кота.">
+              </picture>
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/thin-cat--tablet@1x.png 1x, images/thin-cat--tablet@2x.png 2x"  width="560" height="512">
+                <img src="images/thin-cat--mobile@1x.png" srcset="images/thin-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример худого кота.">
+              </picture>
             </div>
-          </dl>
-          <p class="interactive-example__result">
-            <span>Затраты на питание:</span>
-            <span>15 000 РУБ.</span>
-          </p>
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@2x.png 2x"  width="560" height="512">
-            <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример толстого кота.">
-          </picture>
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/thin-cat--tablet@1x.png 1x, images/thin-cat--tablet@2x.png 2x"  width="560" height="512">
-            <img src="images/thin-cat--mobile@1x.png" srcset="images/thin-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример худого кота.">
-          </picture>
+          </div>
         </div>
       </section>
       <section class="contacts">
@@ -131,10 +141,13 @@
           <div class="contacts__wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-            <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <div class="contacts_wrappex-box">
+              <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8</address>
+              <address class="contacts__adress">Санкт-Петербург</address>
+            </div>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261221!2d30.32046711291568!3d59.93871916198896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1703675051566!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="main-footer">

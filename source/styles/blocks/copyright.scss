@@ -5,24 +5,24 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  &:hover .copyright__icon,
+  &:focus-visible .copyright__icon {
+    color: $primary-color;
+  }
+
+  &:active {
+    .copyright__icon,
+    .copyright__title {
+      opacity: 0.3;
+    }
+  }
 }
 
 .copyright__title {
   margin-right: auto;
 
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.copyright__icon {
-  &:hover,
-  &:focus-visible {
-    color: $primary-color;
-  }
-
-  &:active {
-    color: $primary-color;
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
   }
 }

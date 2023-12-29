@@ -28,34 +28,34 @@
     }
   }
 
-  // &--green-line::after {
-  //   content: " ";
-  //   position: absolute;
-  //   top: 17px;
-  //   left: 100%;
-  //   width: 100vw;
-  //   height: 2px;
-  //   background-color: $primary-color;
-  //   margin-left: 20px;
+  &--green-line::after {
+    content: " ";
+    position: absolute;
+    top: 17px;
+    left: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+    margin-left: 20px;
 
-  //   @media (min-width: $tablet-width) {
-  //     top: 24px;
-  //     margin-left: 40px;
-  //   }
-  // }
+    @media (min-width: $tablet-width) {
+      top: 24px;
+      margin-left: 40px;
+    }
+  }
 
-  // &--green-line {
-  //   @media (min-width: $tablet-width) {
-  //     &::before {
-  //       content: " ";
-  //       position: absolute;
-  //       top: 24px;
-  //       right: 100%;
-  //       width: 100vw;
-  //       height: 2px;
-  //       background-color: $primary-color;
-  //       margin-right: 40px;
-  //     }
-  //   }
-  // }
+  &--green-line {
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 24px;
+        right: 100%;
+        width: 100vw;
+        height: 2px;
+        background-color: $primary-color;
+        margin-right: 40px;
+      }
+    }
+  }
 }

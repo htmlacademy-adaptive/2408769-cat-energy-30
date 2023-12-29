@@ -4,6 +4,10 @@
   &--bg {
     background-color: $basic-gray;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .contacts__wrapper {
@@ -14,6 +18,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 61px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 87px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    background-color: $basic-white;
+    padding: 61px 80px 60px;
   }
 }
 

@@ -1,3 +1,18 @@
+.product {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.product__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    grid-auto-flow: dense;
+    gap: 60px;
+  }
+}
+
 .product__item {
   &::after {
     content: " ";
@@ -6,5 +21,9 @@
     height: 1px;
     background-color: $basic-gray-lighter;
     margin-left: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

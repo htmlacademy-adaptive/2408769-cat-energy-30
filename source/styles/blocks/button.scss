@@ -24,12 +24,6 @@
       color: rgba($basic-white, 0.3);
       background-color: $secondary-color;
     }
-
-    @media (min-width: $tablet-width) {
-      padding: 14px 26px;
-      font-size: 20px;
-      line-height: 26px;
-    }
   }
 
   &--secondary {

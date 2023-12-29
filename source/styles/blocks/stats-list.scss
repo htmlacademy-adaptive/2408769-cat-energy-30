@@ -2,6 +2,11 @@
   border: 1px solid #cdcdcd;
   border-radius: 4px;
   position: relative;
+  min-width: 124px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .stats-list__number {
@@ -37,5 +42,9 @@
     background-color: $basic-white;
     width: 135px;
     top: 88%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-gray;
   }
 }

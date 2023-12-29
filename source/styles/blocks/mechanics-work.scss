@@ -1,5 +1,6 @@
 .mechanics-work {
   margin-bottom: 40px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
@@ -12,6 +13,14 @@
       background-color: $basic-gray-lighter;
       margin-left: -20px;
       margin-top: 47px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+
+    &--line::after {
+      display: none;
     }
   }
 }
@@ -35,6 +44,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 37px 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 37px 75px;
   }
 }
 

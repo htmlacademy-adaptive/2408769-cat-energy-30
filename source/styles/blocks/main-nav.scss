@@ -9,10 +9,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
     position: static;
-    flex-grow: 1;
     margin-left: auto;
-    max-width: 440px;
+    max-width: 75%;
+    background-color: $transparent;
   }
 }
 
@@ -63,20 +65,26 @@
   &:not(.main-nav__link--current):hover,
   &:not(.main-nav__link--current):focus-visible {
     color: $primary-color;
+
+    @media (min-width: $desktop-width) {
+      color: $basic-white;
+      opacity: 0.6;
+    }
   }
 
-  &:active {
+  &:not(.main-nav__link--current):active {
     color: $secondary-color;
     opacity: 0.6;
+
+    @media (min-width: $desktop-width) {
+      color: $basic-white;
+      opacity: 0.3;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-    padding: 0;
-
-    &::before {
-      content: "";
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: " ";
       position: absolute;
       bottom: -10px;
       left: 0;
@@ -86,10 +94,27 @@
       transition: width 0.3s ease;
     }
 
-    &--current::before,
-    &:hover::before,
-    &:focus-visible::before {
-      width: 100%;
+    @media (min-width: $desktop-width) {
+      background-color: $basic-white;
     }
+  }
+
+  &--current::before,
+  &:hover::before,
+  &:focus-visible::before {
+    width: 100%;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
+    color: $basic-white;
   }
 }

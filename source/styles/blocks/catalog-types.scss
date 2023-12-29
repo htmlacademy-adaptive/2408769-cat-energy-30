@@ -1,8 +1,34 @@
+.catalog-types {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 71px;
+  }
+}
+
+.catalog-types__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 570px);
+    gap: 80px;
+  }
+}
+
+.catalog-types__item {
+  @media (min-width: $desktop-width) {
+    max-width: 650px;
+  }
+}
+
+
 .catalog-types__card {
   background: $basic-gray;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: unset;
   }
 }

@@ -2,4 +2,24 @@
   margin: 0;
   margin-top: 27px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 84px;
+    line-height: 60px;
+  }
+
+  &--underline::after {
+    content: " ";
+    display: block;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: $basic-gray-lighter;
+    margin-top: 41px;
+    margin-left: -20px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

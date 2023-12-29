@@ -10,9 +10,7 @@
 .social-media__link {
   display: inline-flex;
   color: $icon-color;
-}
 
-.social-media__icon {
   &:hover,
   &:focus-visible {
     color: $primary-color;

@@ -2,9 +2,14 @@
   font-family: $secondary-font;
   margin: 0;
   padding: 0;
+  position: relative;
 
   &--sm {
     font-size: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 
   &--md {
@@ -23,13 +28,34 @@
     }
   }
 
-  &--line::after {
-    content: " ";
-    display: block;
-    width: calc(100% + 40px);
-    height: 1px;
-    background-color: $basic-gray-lighter;
-    margin-top: 41px;
-    margin-left: -20px;
-  }
+  // &--green-line::after {
+  //   content: " ";
+  //   position: absolute;
+  //   top: 17px;
+  //   left: 100%;
+  //   width: 100vw;
+  //   height: 2px;
+  //   background-color: $primary-color;
+  //   margin-left: 20px;
+
+  //   @media (min-width: $tablet-width) {
+  //     top: 24px;
+  //     margin-left: 40px;
+  //   }
+  // }
+
+  // &--green-line {
+  //   @media (min-width: $tablet-width) {
+  //     &::before {
+  //       content: " ";
+  //       position: absolute;
+  //       top: 24px;
+  //       right: 100%;
+  //       width: 100vw;
+  //       height: 2px;
+  //       background-color: $primary-color;
+  //       margin-right: 40px;
+  //     }
+  //   }
+  // }
 }

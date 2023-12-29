@@ -1,7 +1,20 @@
+
+.program-selection__form {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+}
+
 .program-selection__title {
   line-height: 36px;
   margin-top: 27px;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+    margin-top: 67px;
+    margin-bottom: 54px;
+  }
 }
 
 .program-selection__description {
@@ -12,11 +25,37 @@
   padding-right: 50px;
   margin: 0;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 350px;
+    padding-right: unset;
+    margin-bottom: 1px;
+  }
+}
+
+.program-selection__wrapper-button {
+  margin-top: 15px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-top: unset;
+    margin-bottom: 60px;
+  }
 }
 
 .program-selection__button {
-  margin-top: 15px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .program-selection__footnote {
@@ -24,5 +63,10 @@
   line-height: 16px;
   margin: 0;
   margin-top: 21px;
-  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: unset;
+    display: flex;
+    align-items: center;
+  }
 }

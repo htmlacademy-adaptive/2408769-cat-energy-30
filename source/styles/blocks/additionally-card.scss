@@ -1,13 +1,6 @@
-.additionally-card {
-  margin-top: 13px;
-
-  &::after {
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 19px;
-    background-color: $basic-gray-lighter;
+.additionally-card__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -15,12 +8,40 @@
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 }
 
 .additionally-card__descripsion {
+  display: flex;
   font-size: 14px;
   line-height: 14px;
+  color: $text-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
 }
+
+.additionally-card__variable {
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.additionally-card__value {
+  @media (min-width: $tablet-width) {
+    min-width: 80px;
+    margin-left: 10px;
+    text-align: end;
+  }
+}
+
 
 .additionally-card__button {
   width: 100%;

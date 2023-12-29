@@ -12,20 +12,24 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <header class="main-header main-header--line">
+    <header class="main-header main-header--line" id="header">
       <div class="container">
         <div class="main-header__wrapper">
           <a class="main-header__logo link" href="index.html">
-            <picture class="main-header__img">
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
-              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
-              <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
-            </picture>
-            <picture class="main-header__img">
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
-              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
-              <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
-            </picture>
+            <div class="main-header__img">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
+                <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
+              </picture>
+            </div>
+            <div class="main-header__img">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
+                <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
+              </picture>
+            </div>
           </a>
           <button class="main-header__toogle button-toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <nav class="main-nav">
@@ -402,7 +406,11 @@
       <div class="container">
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
-            <img src="images/text-logo--mobile.svg" width="128" height="24" alt="CAT ENERGY">
+            <a class="main-footer__link" href="#header">
+            <svg width="128" height="24" aria-hidden="true" focusable="false">
+              <use href="images/icons/stack.svg#footer-logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип CAT ENERGY</span>
           </div>
           <div class="main-footer__social-media social-media">
             <ul class="social-media__list list">

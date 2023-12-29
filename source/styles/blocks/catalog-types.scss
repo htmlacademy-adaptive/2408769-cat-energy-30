@@ -5,6 +5,14 @@
   }
 }
 
+.catalog-types__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
 .catalog-types__list {
   @media (min-width: $desktop-width) {
     display: grid;

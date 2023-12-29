@@ -12,20 +12,24 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header" id="header">
       <div class="container">
         <div class="main-header__wrapper">
           <a class="main-header__logo link" href="index.html">
-            <picture class="main-header__img">
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
-              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
-              <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
-            </picture>
-            <picture class="main-header__img">
-              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
-              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
-              <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
-            </picture>
+            <div class="main-header__img">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
+                <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
+              </picture>
+            </div>
+            <div class="main-header__img">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
+                <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
+              </picture>
+            </div>
           </a>
           <button class="main-header__toogle button-toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <nav class="main-nav">
@@ -49,17 +53,21 @@
       <section class="promo">
         <div class="promo__wrapper-bg">
           <div class="container">
-            <div class="promo__wrapper-title">
-              <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
-              <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            </div>
             <div class="promo__wrapper-box">
-              <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
-              <picture class="promo__image">
-                <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="499">
-                <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
-                <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
-              </picture>
+              <div class="promo__wrapper-title">
+                <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
+                <p class="promo__slogan">Занялся собой? Займись котом!</p>
+              </div>
+              <div class="promo__wrapper-button">
+                <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
+              </div>
+              <div class="promo__wrapper-image">
+                <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="499">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
+                  <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -67,6 +75,7 @@
       <section class="catalog-types">
         <div class="container">
           <h2 class="visually-hidden">Виды каталогов</h2>
+          <div class="catalog-types__wrapper">
           <ul class="catalog-types__list list">
             <li class="catalog-types__item">
               <article class="catalog-types__card assortment-card assortment-card--slim">
@@ -83,6 +92,7 @@
               </article>
             </li>
           </ul>
+        </div>
         </div>
       </section>
       <section class="mechanics-work mechanics-work--line">
@@ -106,36 +116,50 @@
       </section>
       <section class="interactive-example">
         <div class="container">
-          <h2 class="interactive-example__title title  title--lg">Живой пример</h2>
-          <div class="interactive-example__wrapper-box">
-            <p class="interactive-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="interactive-example__wrapper-stats">
-              <dl class="interactive-example__stats stats-list">
-                <div class="stats-list__item">
-                  <dt class="stats-list__number">5 кг</dt>
-                  <dd class="stats-list__description">снижение веса</dd>
-                </div>
-                <div class="stats-list__item">
-                  <dt class="stats-list__number">60 дней</dt>
-                  <dd class="stats-list__description">затрачено времени</dd>
-                </div>
-              </dl>
-              <p class="interactive-example__result">
-                  <span>Затраты на питание:</span>
-                  <span>15 000 РУБ.</span>
-              </p>
+          <div class="interactive-example__wrapper">
+            <div class="interactive-example__wrapper-box">
+              <h2 class="interactive-example__title title  title--lg">Живой пример</h2>
+              <p class="interactive-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="interactive-example__wrapper-stats">
+                <dl class="interactive-example__stats stats-list">
+                  <div class="stats-list__item">
+                    <dt class="stats-list__number">5 кг</dt>
+                    <dd class="stats-list__description">снижение веса</dd>
+                  </div>
+                  <div class="stats-list__item">
+                    <dt class="stats-list__number">60 дней</dt>
+                    <dd class="stats-list__description">затрачено времени</dd>
+                  </div>
+                </dl>
+                <p class="interactive-example__result">
+                    <span>Затраты на питание:</span>
+                    <span>15 000 РУБ.</span>
+                </p>
+              </div>
+            </div>
+            <div class="interactive-example__wrapper-slider">
+              <div class="interactive-example__wrapper-first">
+                <picture>
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@2x.png 2x"  width="560" height="512">
+                  <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример толстого кота.">
+                </picture>
+              </div>
+              <div class="interactive-example__wrapper-range">
+                <button class="interactive-example__button-range" type="button">
+                  <svg width="40" height="40" aria-hidden="true" focusable="false">
+                    <use href="images/icons/stack.svg#thumb-icon"></use>
+                  </svg>
+                  <span class="visually-hidden">Ползунок слайдера</span>
+                </button>
+              </div>
+              <div class="interactive-example__wrapper-second">
+                <picture>
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/thin-cat--tablet@1x.png 1x, images/thin-cat--tablet@2x.png 2x"  width="560" height="512">
+                  <img src="images/thin-cat--mobile@1x.png" srcset="images/thin-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример худого кота.">
+                </picture>
+              </div>
             </div>
           </div>
-          <div class="interactive-example__wrapper-slider">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/fat-cat--tablet@1x.png 1x, images/fat-cat--tablet@2x.png 2x"  width="560" height="512">
-              <img src="images/fat-cat--mobile@1x.png" srcset="images/fat-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример толстого кота.">
-            </picture>
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/thin-cat--tablet@1x.png 1x, images/thin-cat--tablet@2x.png 2x"  width="560" height="512">
-              <img src="images/thin-cat--mobile@1x.png" srcset="images/thin-cat--mobile@2x.png 2x" width="280" height="256" alt="Пример худого кота.">
-            </picture>
-            </div>
         </div>
       </section>
       <section class="contacts">
@@ -156,7 +180,11 @@
       <div class="container">
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
-            <img src="images/text-logo--mobile.svg" width="128" height="24" alt="CAT ENERGY">
+            <a class="main-footer__link" href="#header">
+            <svg width="128" height="24" aria-hidden="true" focusable="false">
+              <use href="images/icons/stack.svg#footer-logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип CAT ENERGY</span>
           </div>
           <div class="main-footer__social-media social-media">
             <ul class="social-media__list list">

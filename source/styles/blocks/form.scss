@@ -1,5 +1,13 @@
 .form__wrapper-section {
   margin-bottom: 26px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(570px, 1000px));
+    gap: 80px;
+    padding-top: 66px;
+    margin-bottom: 70px;
+  }
 }
 
 .form__fieldset {
@@ -11,6 +19,10 @@
     @media (min-width: $tablet-width) {
       border: 1px solid #e7e7e7;
       margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: unset;
     }
   }
 
@@ -39,36 +51,83 @@
     padding-bottom: 65px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   &--input {
     display: grid;
     gap: 14px;
+
+    @media (min-width: $desktop-width) {
+      gap: 20px;
+    }
+  }
+
+  &--columns {
+    display: grid;
+    gap: 14px;
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(2, minmax(470px, 1000px));
+      gap: 80px;
+      padding-top: 65px;
+      padding-bottom: 70px;
+    }
   }
 
   &--pick {
     padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     @media (min-width: $tablet-width) {
       padding: 28px 27px 32px;
+      gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 30px 27px 30px;
     }
   }
 
   &--textarea {
     padding-top: 76px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 67px;
+      padding-bottom: 70px;
+    }
   }
 
   &--checkbox {
     padding-top: 51px;
     padding-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: $tablet-width) {
+      gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 46px;
+      padding-bottom: 60px;
+    }
   }
 }
 
 .form__legend {
   display: inline-block;
   line-height: 26px;
+  max-width: 190px;
 
   @media (min-width: $tablet-width) {
     line-height: 36px;
     margin-bottom: 11px;
+    max-width: unset;
   }
 }
 
@@ -90,9 +149,13 @@
 
   &--checkbox {
     @media (min-width: $tablet-width) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 42px;
       column-gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }

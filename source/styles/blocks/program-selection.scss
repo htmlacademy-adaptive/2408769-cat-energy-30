@@ -3,6 +3,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .program-selection__title {
@@ -47,9 +51,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+    gap: 60px;
     margin-top: unset;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 570px 1fr;
   }
 }
 
@@ -61,6 +69,11 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 750px;
+  }
+
 }
 
 .program-selection__footnote {

@@ -1,5 +1,5 @@
 .main-nav {
-  display: block;
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    gap: 20px;
     position: static;
     margin-left: auto;
     max-width: 75%;
@@ -23,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
+    justify-content: end;
   }
 }
 

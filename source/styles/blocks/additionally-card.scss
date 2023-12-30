@@ -1,7 +1,7 @@
 .additionally-card {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: minmax(610px, 750px) minmax(244px, 350px);
+    grid-template-columns: 610px 244px;
     gap: 40px;
   }
 }

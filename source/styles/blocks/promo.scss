@@ -126,9 +126,16 @@
   }
 }
 
+.promo__wrapper-button {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
 .promo__button {
   margin-bottom: 3px;
-  order: 2;
 
   @media (min-width: $tablet-width) {
     display: inline-block;

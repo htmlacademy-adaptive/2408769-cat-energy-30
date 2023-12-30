@@ -1,6 +1,20 @@
+.additionally-card {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: minmax(610px, 750px) minmax(244px, 350px);
+    gap: 40px;
+  }
+}
+
 .additionally-card__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    align-items: center;
   }
 }
 
@@ -8,9 +22,17 @@
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 13px;
+  color: $text-color-2;
 
   @media (min-width: $tablet-width) {
+    line-height: 20px;
     margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    margin: 0;
   }
 }
 
@@ -22,7 +44,15 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
     margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    margin: 0;
   }
 }
 
@@ -32,6 +62,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .additionally-card__value {
@@ -40,10 +74,21 @@
     margin-left: 10px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-left: unset;
+    word-wrap: break-word;
+  }
 }
 
 
 .additionally-card__button {
   width: 100%;
   margin-top: 15px;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+  }
 }

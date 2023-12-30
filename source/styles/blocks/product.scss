@@ -11,6 +11,11 @@
     grid-auto-flow: dense;
     gap: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 63px 80px;
+  }
 }
 
 .product__item {

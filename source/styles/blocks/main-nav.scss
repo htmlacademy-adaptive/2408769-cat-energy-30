@@ -1,11 +1,15 @@
 .main-nav {
-  display: none;
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: $basic-white;
   width: 100%;
   z-index: 2;
+
+  &--closed {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;

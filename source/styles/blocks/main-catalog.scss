@@ -9,6 +9,11 @@
     line-height: 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
+
+
   &--underline::after {
     content: " ";
     display: block;

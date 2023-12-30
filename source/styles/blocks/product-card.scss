@@ -10,8 +10,12 @@
     padding: 10px 40px 37px;
     box-sizing: border-box;
     width: 324px;
-    height: 511px;
+    min-height: 511px;
     background: linear-gradient(to bottom, $basic-white 16%, $basic-gray 16%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
@@ -23,6 +27,10 @@
   @media (min-width: $tablet-width) {
     min-height: 210px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }
 
@@ -37,6 +45,12 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -60,6 +74,10 @@
 .product-card__wrapper-desc {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
 }
 
 .product-card__wrapper-line {

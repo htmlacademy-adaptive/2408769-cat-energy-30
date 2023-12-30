@@ -1,6 +1,11 @@
 .banner {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .banner__card {
@@ -30,6 +35,20 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 288px;
+    width: 245px;
+    padding: 60px 38px 42px;
+    margin: 0;
+    background:
+      linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)),
+      image-set(
+      url("../../images/banner--desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/banner--desktop@2x.jpg") type("image/jpg") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .banner__wrapper {
@@ -39,6 +58,10 @@
   @media (min-width: $tablet-width) {
     text-align: start;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
@@ -53,6 +76,10 @@
     align-items: center;
   }
 
+  @media (min-width: $desktop-width) {
+    display: unset;
+  }
+
   &::before {
     content: " ";
     display: block;
@@ -64,12 +91,18 @@
     margin-bottom: 48px;
 
     @media (min-width: $tablet-width) {
-      width: 80px;
       display: flex;
       align-items: center;
-      flex-shrink: 0;
       margin: unset;
-      margin-right: 264px;
+      flex-shrink: 0;
+      width: 80px;
+      margin-right: 245px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 83px;
+      margin: auto;
+      margin-bottom: 46px;
     }
   }
 }

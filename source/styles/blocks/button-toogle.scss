@@ -11,6 +11,10 @@
   &--close {
     background-image: url("../../images/icons/stack.svg#cross");
     background-size: 18px 18px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -17,6 +17,12 @@
       height: 60px;
       margin-bottom: 50px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 40px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -67,6 +73,14 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-top: unset;
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: auto;
+    width: 90%;
   }
 }

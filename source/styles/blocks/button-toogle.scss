@@ -1,4 +1,5 @@
 .button-toogle {
+  display: none;
   border: 0;
   height: 24px;
   width: 24px;
@@ -7,10 +8,18 @@
   background-position: center;
   background-size: 24px 24px;
   background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &--visible {
+    display: block;
+  }
 
   &--close {
+    display: block;
     background-image: url("../../images/icons/stack.svg#cross");
     background-size: 18px 18px;
+    transform: rotate(90deg);
 
     @media (min-width: $tablet-width) {
       display: none;

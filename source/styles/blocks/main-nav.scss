@@ -1,11 +1,15 @@
 .main-nav {
   display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
   background-color: $basic-white;
   width: 100%;
   z-index: 2;
+  transition: height 0.3s ease;
+
+  &--open {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 
   &--closed {
     display: none;
@@ -40,7 +44,7 @@
   &:first-of-type::before {
     content: " ";
     display: block;
-    width: 100%;
+    width: calc(100% + 40px);
     height: 1px;
     background-color: $basic-gray-lighter;
   }
@@ -48,7 +52,7 @@
   &::after {
     content: " ";
     display: block;
-    width: 100%;
+    width: calc(100% + 40px);
     height: 1px;
     background-color: $basic-gray-lighter;
   }

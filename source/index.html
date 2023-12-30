@@ -15,23 +15,25 @@
     <header class="main-header" id="header">
       <div class="container">
         <div class="main-header__wrapper">
-          <a class="main-header__logo link" href="index.html">
-            <div class="main-header__img">
-              <picture>
-                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
-                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
-                <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
-              </picture>
-            </div>
-            <div class="main-header__img">
-              <picture>
-                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
-                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
-                <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
-              </picture>
-            </div>
-          </a>
-          <button class="main-header__toogle button-toogle button-toogle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-header__wrapper-block">
+            <a class="main-header__logo link" href="index.html">
+              <div class="main-header__img">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
+                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
+                  <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
+                </picture>
+              </div>
+              <div class="main-header__img">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
+                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
+                  <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
+                </picture>
+              </div>
+            </a>
+            <button class="main-header__toogle button-toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
           <nav class="main-nav">
             <ul class="main-nav__list list">
               <li class="main-nav__item ">
@@ -52,21 +54,23 @@
       <h1 class="visually-hidden">CAT ENERGY</h1>
       <section class="promo">
         <div class="promo__wrapper-bg">
-          <div class="container">
-            <div class="promo__wrapper-box">
-              <div class="promo__wrapper-title">
-                <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
-                <p class="promo__slogan">Занялся собой? Займись котом!</p>
-              </div>
-              <div class="promo__wrapper-button">
-                <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
-              </div>
-              <div class="promo__wrapper-image">
-                <picture>
-                  <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="499">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
-                  <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
-                </picture>
+          <div class="promo__wrapper-block">
+            <div class="container">
+              <div class="promo__wrapper-box">
+                  <div class="promo__wrapper-title">
+                    <h2 class="promo__title title title--lg">Функциональное<span class="custom-br"></span>питание для котов</h2>
+                    <p class="promo__slogan">Занялся собой? Займись котом!</p>
+                  </div>
+                  <div class="promo__wrapper-button">
+                    <a class="promo__button button button--primary" href="form.html">подобрать программу</a>
+                  </div>
+                <div class="promo__wrapper-image">
+                  <picture>
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/promo--desktop@1x.png 1x, images/promo--desktop@2x.png 2x"  width="552" height="499">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/promo--tablet@1x.png 1x, images/promo--tablet@2x.png 2x"  width="709" height="609">
+                    <img src="images/promo--mobile@1x.png" srcset="images/promo--mobile@2x.png 2x" width="280" height="270" alt="Пример продукта Cat Energy.">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -145,12 +149,11 @@
                 </picture>
               </div>
               <div class="interactive-example__wrapper-range">
-                <button class="interactive-example__button-range" type="button">
+                <button class="interactive-example__button-range" type="range" min="0" max="100" value="50" step="1">
                   <svg width="40" height="40" aria-hidden="true" focusable="false">
                     <use href="images/icons/stack.svg#thumb-icon"></use>
                   </svg>
                   <span class="visually-hidden">Ползунок слайдера</span>
-                </button>
               </div>
               <div class="interactive-example__wrapper-second">
                 <picture>

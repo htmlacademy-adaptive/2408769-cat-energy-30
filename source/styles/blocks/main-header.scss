@@ -58,18 +58,37 @@
   }
 }
 
-.main-header__img {
+.main-header__logo-img {
   display: inline-flex;
 
-  &:not(:last-child)::after {
+  &::after {
     content: " ";
     display: inline-block;
     width: 56px;
   }
 
   @media (min-width: $tablet-width) {
-    &:not(:last-child)::after {
+    &::after {
       width: 13px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 14px;
+    }
+  }
+}
+
+.main-header__logo-text {
+  color: $dark-gray;
+
+  @media (min-width: $tablet-width) {
+    color: $text-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
   }
 }

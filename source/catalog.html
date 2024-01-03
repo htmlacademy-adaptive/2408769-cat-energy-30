@@ -17,20 +17,16 @@
         <div class="main-header__wrapper">
           <div class="main-header__wrapper-block">
             <a class="main-header__logo link" href="index.html">
-              <div class="main-header__img">
+              <div class="main-header__logo-img">
                 <picture>
                   <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo--desktop.svg" width="70" height="58">
                   <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo--tablet.svg" width="60" height="50">
                   <img src="images/logo--mobile.svg" width="33" height="38" alt="Логотип CAT ENERGY.">
                 </picture>
               </div>
-              <div class="main-header__img">
-                <picture>
-                  <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg" width="118" height="21">
-                  <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/text-logo--tablet.svg"  width="101" height="18">
-                  <img src="images/text-logo--mobile.svg" width="101" height="18" alt="">
-                </picture>
-              </div>
+              <svg class="main-header__logo-text" width="101" height="18" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#text-logo"></use>
+              </svg>
             </a>
             <button class="main-header__toogle button-toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -409,10 +405,11 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
             <a class="main-footer__link" href="#header">
-            <svg width="128" height="24" aria-hidden="true" focusable="false">
-              <use href="images/icons/stack.svg#footer-logo"></use>
-            </svg>
-            <span class="visually-hidden">Логотип CAT ENERGY</span>
+              <svg width="128" height="24" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#text-logo"></use>
+              </svg>
+              <span class="visually-hidden">Логотип CAT ENERGY</span>
+            </a>
           </div>
           <div class="main-footer__social-media social-media">
             <ul class="social-media__list list">

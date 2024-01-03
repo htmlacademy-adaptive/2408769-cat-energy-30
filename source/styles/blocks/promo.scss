@@ -1,15 +1,9 @@
 .promo {
-  overflow: hidden;
   display: flex;
   color: $basic-white;
   min-height: 478px;
-  background:
-    linear-gradient(rgba($primary-color, 0.85) 62.4%, rgba($primary-color, 0.85)),
-    image-set(
-    url("../../images/promo-bg--mobile@1x.jpg") type("image/jpg") 1x,
-    url("../../images/promo-bg--mobile@2x.jpg") type("image/jpg") 2x);
+  background: linear-gradient(#414045, #414045);
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: auto 302px;
   margin-bottom: 17px;
 
@@ -26,7 +20,21 @@
 }
 
 .promo__wrapper-bg {
-  margin: 0 auto;
+  width: 100%;
+  background:
+    linear-gradient(rgba($secondary-color, 0.85) 62.4%, rgba($primary-color, 0.85)),
+    image-set(
+    url("../../images/promo-bg--mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/promo-bg--mobile@2x.jpg") type("image/jpg") 2x);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 302px;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    background: none;
+    margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

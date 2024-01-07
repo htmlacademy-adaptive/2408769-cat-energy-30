@@ -1,22 +1,173 @@
-.assortment-card__title {
-  text-transform: uppercase;
-  line-height: 37px;
+.assortment-card {
+  padding: 30px 20px 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 300px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 60px 57px 52px;
+  }
+
+  &--slim,
+  &--pro {
+    position: relative;
+  }
 
   &--slim::before {
-    @include icon-before(url("../../images/icons/stack.svg#cat-slim"), $transparent, 36px, 50px);
+    content: " ";
+    position: absolute;
+    top: 21px;
+    left: 27px;
+    display: block;
+    width: 36px;
+    height: 50px;
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+    background-size: 36px 50px;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      left: unset;
+      right: 93px;
+      background-size: 140px 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+      right: unset;
+      background-size: 70px 97px;
+    }
+  }
+
+  &--slim::after,
+  &--pro::after {
+    content: " ";
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $primary-color;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: unset;
+      right: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   &--pro::before {
-    @include icon-before(url("../../images/icons/stack.svg#cat-pro"), $transparent, 67px, 28px);
+    content: " ";
+    position: absolute;
+    top: 35px;
+    left: 13px;
+    display: block;
+    width: 68px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#cat-pro");
+    background-size: 68px 28px;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 270px;
+      height: 113px;
+      top: 135px;
+      left: unset;
+      right: 29px;
+      background-size: 270px 113px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      left: 33px;
+      right: unset;
+      background-size: 134px 56px;
+    }
+  }
+}
+
+.assortment-card__title {
+  text-transform: uppercase;
+  line-height: 37px;
+  margin-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
 .assortment-card__descripsion {
   color: $text-color;
+  margin-top: 29px;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $basic-gray-lighter;
+    margin-top: 22px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 52px;
+    min-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    margin-bottom: 27px;
+  }
 }
 
 .assortment-card__link {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    gap: 25px;
+  }
 }

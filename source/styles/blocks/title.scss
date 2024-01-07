@@ -2,16 +2,54 @@
   font-family: $secondary-font;
   margin: 0;
   padding: 0;
+  position: relative;
 
   &--sm {
     font-size: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 
   &--md {
     font-size: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+    }
   }
 
   &--lg {
     font-size: 36px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+    }
+  }
+
+  &--green-line {
+    background-color: $basic-white;
+    box-shadow: -20px 0 0 $basic-white, 20px 0 0 $basic-white;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: -40px 0 0 $basic-white, 40px 0 0 $basic-white;
+    }
+  }
+
+  &--green-line::before {
+    content: " ";
+    position: absolute;
+    top: 17px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+    box-shadow: 100vw 0 0 $primary-color;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+    }
   }
 }

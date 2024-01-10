@@ -2,4 +2,38 @@
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    border: 2px solid $text-color;
+    outline: none;
+  }
+
+  &--error {
+    border: 2px solid $error-color;
+  }
+
+  &--error + .icon {
+    color: $error-color;
+  }
+
+  &--icon {
+    padding-right: 33px;
+
+    &:focus-visible + .icon {
+      color: $primary-color;
+    }
+  }
 }

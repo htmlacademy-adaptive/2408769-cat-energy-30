@@ -1,0 +1,25 @@
+.social-media__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.social-media__item {
+  display: inline-flex;
+}
+
+.social-media__link {
+  display: inline-flex;
+  color: $icon-color;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+    opacity: 0.3;
+  }
+}

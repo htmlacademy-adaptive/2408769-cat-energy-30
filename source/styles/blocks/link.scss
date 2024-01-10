@@ -3,8 +3,33 @@
   color: $basic-black;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 
   &--product {
     color: $text-color-2;
+  }
+
+  &--arrow {
+    &::after {
+      content: " ";
+      display: block;
+      width: 32px;
+      height: 10px;
+      background-image: url("../../images/icons/stack.svg#icon-arrow");
+      background-position: -8px;
+      background-size: 32px 10px;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    &:hover::after,
+    &:focus-visible::after {
+      background-position: unset;
+      transition: background-position 0.5s ease;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

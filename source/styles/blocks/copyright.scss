@@ -1,6 +1,35 @@
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
 .copyright__link {
+  display: flex;
+  align-items: center;
   color: $text-color;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  &:hover .copyright__icon,
+  &:focus-visible .copyright__icon {
+    color: $primary-color;
+  }
+
+  &:active {
+    .copyright__icon,
+    .copyright__title {
+      opacity: 0.3;
+    }
+  }
+}
+
+.copyright__title {
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
 }

@@ -1,7 +1,8 @@
 .button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 44px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -13,10 +14,26 @@
   &--primary {
     background-color: $primary-color;
     color: $basic-white;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $secondary-color;
+    }
+
+    &:active {
+      color: rgba($basic-white, 0.3);
+      background-color: $secondary-color;
+    }
   }
 
   &--secondary {
-    background-color: $secondary-color;
+    background-color: $basic-gray;
     color: $text-color;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      background-color: $basic-gray-lighter;
+    }
   }
 }

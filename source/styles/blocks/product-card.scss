@@ -1,7 +1,122 @@
+.product-card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px 37px;
+    box-sizing: border-box;
+    width: 324px;
+    min-height: 511px;
+    background: linear-gradient(to bottom, $basic-white 16%, $basic-gray 16%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .product-card__image {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 210px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .product-card__title {
   line-height: 20px;
+  width: 100px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    width: 135px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+}
+
+.product-card__link {
+  display: inline-block;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+    opacity: 0.3;
+  }
+}
+
+.product-card__wrapper-desc {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.product-card__wrapper-line {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $basic-gray-lighter;
+      margin-top: 4px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.product-card__descripsion {
+  display: flex;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-card__variable {
+  margin-right: auto;
+}
+
+.product-card__button {
+  grid-column: 1/-1;
+  width: 100%;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
 }

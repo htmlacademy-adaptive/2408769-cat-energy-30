@@ -25,7 +25,6 @@
     gap: 87px;
     position: absolute;
     z-index: 2;
-    left: 110px;
     top: 95px;
     background-color: $basic-white;
     padding: 61px 80px 60px;
@@ -93,20 +92,21 @@
   z-index: 1;
   border: 0;
   width: 100%;
-  background:
-    image-set(
-    url("../../images/promo-bg--mobile@1x.jpg") type("image/jpg") 1x,
-    url("../../images/promo-bg--mobile@2x.jpg") type("image/jpg") 2x);
 
   @media (min-width: $tablet-width) {
     height: 400px;
   }
 }
 
-.contacts__map-image {
+.contacts__wrapper-image {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.contacts__image {
+  width: 100%;
+  object-fit: cover;
 }

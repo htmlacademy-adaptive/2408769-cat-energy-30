@@ -31,12 +31,12 @@
   background-size: auto 302px;
 
   @media (min-width: $tablet-width) {
-    width: unset;
     background: none;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    width: unset;
     margin: 0;
     margin-bottom: 182px;
 
@@ -62,10 +62,11 @@
 }
 
 .promo__wrapper-block {
-  position: relative;
+  width: 100vw;
 }
 
 .promo__wrapper-box {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -135,7 +136,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
-    left: calc(100% - 180px);
+    left: calc(40% - 41px);
     z-index: 1;
     margin-top: unset;
   }

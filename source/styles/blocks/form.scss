@@ -135,7 +135,6 @@
   color: $text-color;
 
   &--input {
-    position: relative;
     display: grid;
     align-items: center;
     grid-template-columns: minmax(0, max-content) auto;
@@ -169,6 +168,10 @@
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
+}
+
+.form__wrapper-input {
+  position: relative;
 }
 
 .form__input {

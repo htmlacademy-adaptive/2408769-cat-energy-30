@@ -24,6 +24,8 @@
   background:
     linear-gradient(rgba($secondary-color, 0.85) 62.4%, rgba($primary-color, 0.85)),
     image-set(
+    url("../../images/promo-bg--mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/promo-bg--mobile@2x.webp") type("image/webp") 2x,
     url("../../images/promo-bg--mobile@1x.jpg") type("image/jpg") 1x,
     url("../../images/promo-bg--mobile@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
@@ -52,6 +54,8 @@
       background:
         linear-gradient(to right, rgba($primary-color, 0.85) 50%, rgba($primary-color, 0.85) 50%),
         image-set(
+        url("../../images/promo-bg--desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/promo-bg--desktop@2x.webp") type("image/webp") 2x,
         url("../../images/promo-bg--desktop@1x.jpg") type("image/jpg") 1x,
         url("../../images/promo-bg--desktop@2x.jpg") type("image/jpg") 2x);
       background-repeat: no-repeat;

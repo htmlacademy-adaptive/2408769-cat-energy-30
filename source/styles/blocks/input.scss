@@ -25,14 +25,14 @@
     border: 2px solid $error-color;
   }
 
-  &--error + .icon {
+  &--error ~ .icon {
     color: $error-color;
   }
 
   &--icon {
     padding-right: 33px;
 
-    &:focus-visible + .icon {
+    &:focus-visible ~ .icon {
       color: $primary-color;
     }
   }

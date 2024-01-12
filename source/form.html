@@ -14,7 +14,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <header class="main-header main-header--line" id="header">
+    <header class="main-header main-header--line">
       <div class="container">
         <div class="main-header__wrapper">
           <div class="main-header__wrapper-block">
@@ -62,15 +62,21 @@
                 <div class="form__wrapper-label form__wrapper-label--input">
                   <label class="form__label form__label--input">
                     <span class="form__title form-inscription">Имя:*</span>
-                    <input class="form__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
+                    <span class="form__wrapper-input">
+                      <input class="form__input input" placeholder="Укажите имя владельца" type="text" name="owner-name" value="Барсик" required>
+                    </span>
                   </label>
                   <label class="form__label form__label--input">
                     <span class="form__title form-inscription">Вес (кг):*</span>
-                    <input class="form__input input" placeholder="Укажите вес вашего питомца" type="text" name="weight" value="7" required>
+                    <span class="form__wrapper-input">
+                      <input class="form__input input" placeholder="Укажите вес вашего питомца" type="text" name="weight" value="7" required>
+                    </span>
                   </label>
                   <label class="form__label form__label--input">
                     <span class="form__title form-inscription">Возраст (лет):</span>
-                    <input class="form__input input" placeholder="Укажите возраст вашего питомца" type="text" name="age" value="7">
+                    <span class="form__wrapper-input">
+                      <input class="form__input input" placeholder="Укажите возраст вашего питомца" type="text" name="age" value="7">
+                    </span>
                   </label>
                 </div>
               </fieldset>
@@ -108,17 +114,21 @@
               <div class="form__wrapper-label form__wrapper-label--columns">
                 <label class="form__label form__label--input">
                   <span class="form__title form-inscription">E-mail:*</span>
-                  <input class="form__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
-                  <svg class="form__icon icon" width="20" height="20" aria-hidden="true" focusable="false">
-                    <use href="images/icons/stack.svg#icon-message"></use>
-                  </svg>
+                  <span class="form__wrapper-input">
+                    <input class="form__input input input--icon" placeholder="Введите ваш email" type="email" name="owner-email" value="кuklachev@gmail.com" required>
+                    <svg class="form__icon icon" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="images/icons/stack.svg#icon-message"></use>
+                    </svg>
+                  </span>
                 </label>
                 <label class="form__label form__label--input">
                   <span class="form__title form-inscription">Телефон:*</span>
-                  <input class="form__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
-                  <svg class="form__icon icon" width="20" height="20" aria-hidden="true" focusable="false">
-                    <use href="images/icons/stack.svg#icon-phone"></use>
-                  </svg>
+                  <span class="form__wrapper-input">
+                    <input class="form__input input input--icon" placeholder="Введите ваш телефон" type="tel" name="owner-email" value="8 (960) 900-60-90" required>
+                    <svg class="form__icon icon" width="20" height="20" aria-hidden="true" focusable="false">
+                      <use href="images/icons/stack.svg#icon-phone"></use>
+                    </svg>
+                  </span>
                 </label>
               </div>
             </fieldset>
@@ -186,11 +196,14 @@
         </div>
         <div class="contacts__wrapper-map">
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261221!2d30.32046711291568!3d59.93871916198896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1703675051566!5m2!1sru!2sru" width="320" height="362" title="Санкт-Петербург, Большая Конюшенная ул., 19/8" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="contacts__map-image">
+          <div class="contacts__wrapper-image">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/map--desktop@1x.webp 1x, images/map--desktop@2x.webp 2x"  width="1440" height="400">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/map--tablet@1x.webp 1x, images/map--tablet@2x.webp 2x"  width="768" height="400">
+              <source type="image/webp" srcset="images/map--mobile@1x.webp 1x, images/map--mobile@2x.webp 2x"  width="320" height="362">
               <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map--desktop@1x.jpg 1x, images/map--desktop@2x.jpg 2x"  width="1440" height="400">
               <source type="image/jpg" media="(min-width: 768px)" srcset="images/map--tablet@1x.jpg 1x, images/map--tablet@2x.jpg 2x"  width="768" height="400">
-              <img src="images/map--mobile@1x.jpg" srcset="images/map--mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург." loading="lazy">
+              <img class="contacts__image" src="images/map--mobile@1x.jpg" srcset="images/map--mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург." loading="lazy">
             </picture>
           </div>
         </div>
@@ -200,7 +213,7 @@
       <div class="container">
         <div class="main-footer__wrapper">
           <div class="main-footer__logo">
-            <a class="main-footer__link" href="#header">
+            <a class="main-footer__link" href="#">
               <svg width="128" height="24" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#text-logo"></use>
               </svg>

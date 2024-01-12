@@ -12,6 +12,7 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  pointer-events: none;
 
   &:hover .copyright__icon,
   &:focus-visible .copyright__icon {
@@ -28,8 +29,13 @@
 
 .copyright__title {
   margin-right: auto;
+  pointer-events: all;
 
   @media (min-width: $tablet-width) {
     margin-right: 28px;
   }
+}
+
+.copyright__icon {
+  pointer-events: all;
 }

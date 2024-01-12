@@ -26,17 +26,17 @@
 }
 
 .control__input {
-  &[type="checkbox"]:checked + .control__mark {
+  &[type="checkbox"]:checked ~ .control__mark {
     background-image: url("../../images/icons/stack.svg#tick");
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  &[type="radio"] + .control__mark {
+  &[type="radio"] ~ .control__mark {
     border-radius: 50%;
   }
 
-  &[type="radio"]:checked + .control__mark::before {
+  &[type="radio"]:checked ~ .control__mark::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -53,16 +53,16 @@
     }
   }
 
-  &:hover + .control__mark,
-  &:focus-visible + .control__mark {
+  &:hover ~ .control__mark,
+  &:focus-visible ~ .control__mark {
     border: 1px solid #bababa;
   }
 
-  &:focus-visible + .control__mark {
+  &:focus-visible ~ .control__mark {
     border: 2px solid $text-color;
   }
 
-  &:disabled + .control__mark,
+  &:disabled ~ .control__mark,
   &:disabled ~ .control__discripsions {
     opacity: 0.3;
     cursor: not-allowed;

@@ -4,6 +4,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, minmax(570px, 1000px));
+    align-items: start;
     gap: 80px;
     padding-top: 66px;
     margin-bottom: 70px;
@@ -43,12 +44,12 @@
 
 .form__wrapper-label {
   padding-top: 35px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +60,7 @@
     display: grid;
     gap: 14px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       gap: 20px;
     }
   }
@@ -68,16 +69,20 @@
     display: grid;
     gap: 14px;
 
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+    }
+
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(2, minmax(470px, 1000px));
       gap: 80px;
-      padding-top: 65px;
+      padding-top: 62px;
       padding-bottom: 70px;
     }
   }
 
   &--pick {
-    padding-top: 28px;
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -93,28 +98,25 @@
   }
 
   &--textarea {
-    padding-top: 76px;
+    padding-top: 36px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       padding-top: 67px;
       padding-bottom: 70px;
     }
   }
 
   &--checkbox {
-    padding-top: 51px;
-    padding-bottom: 42px;
+    padding-top: 39px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     @media (min-width: $tablet-width) {
       gap: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 46px;
-      padding-bottom: 60px;
+      padding-top: 48px;
+      padding-bottom: 65px;
     }
   }
 }
@@ -155,6 +157,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
+      column-gap: 80px;
     }
   }
 }

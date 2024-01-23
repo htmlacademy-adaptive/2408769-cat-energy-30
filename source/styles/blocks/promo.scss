@@ -1,5 +1,6 @@
 .promo {
   display: flex;
+  overflow: hidden;
   color: $basic-white;
   min-height: 478px;
   background: linear-gradient(#414045, #414045);
@@ -60,7 +61,20 @@
         url("../../images/promo-bg--desktop@2x.jpg") type("image/jpg") 2x);
       background-repeat: no-repeat;
       background-position: top right;
-      background-size: 50vw 694px, cover;
+      background-size: 50vw 694px, contain;
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background: linear-gradient(#414045, #414045);
+      background-size: 50vw 694px;
+      z-index: -1;
     }
   }
 }

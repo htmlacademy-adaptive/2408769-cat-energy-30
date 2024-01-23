@@ -9,7 +9,7 @@
 }
 
 .banner__card {
-  min-height: 290px;
+  height: 100%;
   width: 280px;
   box-sizing: border-box;
   padding: 60px 60px 43px 60px;
@@ -26,9 +26,8 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    min-height: 200px;
     width: 707px;
-    padding: 57px 125px 60px 77px;
+    padding: 60px 125px 60px 77px;
     margin-top: 70px;
     margin-bottom: 75px;
     background:
@@ -43,7 +42,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 288px;
     width: 245px;
     padding: 60px 38px 42px;
     margin: 0;
@@ -104,7 +102,8 @@
       margin: unset;
       flex-shrink: 0;
       width: 80px;
-      margin-right: 245px;
+      margin-right: 264px;
+      margin-top: -3px;
     }
 
     @media (min-width: $desktop-width) {

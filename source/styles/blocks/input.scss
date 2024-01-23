@@ -14,16 +14,15 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus-visible {
-    border: 2px solid $text-color;
-    outline: none;
+    outline: 2px solid $text-color;
   }
 
   &--error {
-    border: 2px solid $error-color;
+    outline: 2px solid $error-color;
   }
 
   &--error ~ .icon {

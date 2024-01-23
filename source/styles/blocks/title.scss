@@ -41,7 +41,7 @@
   &--green-line::before {
     content: " ";
     position: absolute;
-    top: 17px;
+    top: 14px;
     right: 0;
     width: 100vw;
     height: 2px;
@@ -50,7 +50,7 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      top: 24px;
+      top: 22px;
     }
   }
 }

@@ -1,3 +1,12 @@
+.program-selection__header {
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
 
 .program-selection__form {
   @media (min-width: $tablet-width) {
@@ -58,6 +67,8 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 570px 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
   }
 }
 
@@ -77,6 +88,7 @@
 
 .program-selection__footnote {
   text-align: center;
+  font-size: 16px;
   line-height: 16px;
   margin: 0;
   margin-top: 21px;
@@ -85,5 +97,6 @@
     margin-top: unset;
     display: flex;
     align-items: center;
+    padding-bottom: 5px;
   }
 }

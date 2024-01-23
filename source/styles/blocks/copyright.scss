@@ -32,10 +32,12 @@
   pointer-events: all;
 
   @media (min-width: $tablet-width) {
-    margin-right: 28px;
+    padding-left: 8px;
+    margin-right: 21px;
   }
 }
 
 .copyright__icon {
   pointer-events: all;
+  flex-shrink: 0;
 }

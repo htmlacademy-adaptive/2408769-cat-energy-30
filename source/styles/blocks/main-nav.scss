@@ -11,6 +11,11 @@
     left: 0;
   }
 
+  &--open .main-nav__item:first-of-type::before,
+  &--open .main-nav__item::after {
+    width: 100%;
+  }
+
   &--closed {
     display: none;
   }
@@ -24,6 +29,11 @@
     margin-left: auto;
     max-width: 75%;
     background-color: $transparent;
+    padding-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
   }
 }
 
@@ -47,6 +57,7 @@
     width: calc(100% + 40px);
     height: 1px;
     background-color: $basic-gray-lighter;
+    margin-top: -1px;
   }
 
   &::after {
@@ -69,8 +80,7 @@
   display: block;
   font-size: 20px;
   line-height: 20px;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 21px 20px 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

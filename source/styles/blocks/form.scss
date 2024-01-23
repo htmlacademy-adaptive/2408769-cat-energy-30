@@ -48,8 +48,8 @@
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    padding-bottom: 69px;
+    padding-top: 67px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,12 +88,8 @@
     gap: 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 28px 27px 32px;
-      gap: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
       padding: 30px 27px 30px;
+      gap: 30px;
     }
   }
 
@@ -101,8 +97,8 @@
     padding-top: 36px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 67px;
-      padding-bottom: 70px;
+      padding-top: 76px;
+      padding-bottom: 63px;
     }
   }
 
@@ -115,8 +111,8 @@
 
     @media (min-width: $tablet-width) {
       gap: 30px;
-      padding-top: 48px;
-      padding-bottom: 65px;
+      padding-top: 52px;
+      padding-bottom: 58px;
     }
   }
 }
@@ -169,7 +165,7 @@
 .form__icon {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 15px;
   transform: translateY(-50%);
 }
 
@@ -188,6 +184,7 @@
 
 .form__textarea {
   min-height: 150px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     min-height: 175px;

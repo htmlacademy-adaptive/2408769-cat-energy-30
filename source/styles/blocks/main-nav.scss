@@ -57,6 +57,7 @@
     width: calc(100% + 40px);
     height: 1px;
     background-color: $basic-gray-lighter;
+    margin-top: -1px;
   }
 
   &::after {

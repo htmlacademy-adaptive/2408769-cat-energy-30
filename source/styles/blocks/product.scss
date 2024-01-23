@@ -1,6 +1,6 @@
 .product {
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +24,8 @@
 }
 
 .product__item {
+  display: flex;
+
   &::after {
     content: " ";
     display: block;

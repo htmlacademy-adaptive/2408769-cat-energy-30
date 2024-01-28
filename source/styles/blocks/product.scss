@@ -24,7 +24,9 @@
 }
 
 .product__item {
-  display: flex;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 
   &::after {
     content: " ";

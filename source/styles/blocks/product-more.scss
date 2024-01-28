@@ -28,9 +28,14 @@
   @media (min-width: $tablet-width) {
     margin-top: 82px;
     border: 2px solid $basic-gray;
+    min-width: 324px;
     min-height: 429px;
     box-sizing: border-box;
     padding: 50px 20px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
   }
 }
 
@@ -65,6 +70,10 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 91px;
   }
 }
 
